@@ -1,0 +1,64 @@
+/* CSS code for the onlinebestellung form
+** added by criscom
+** URL: http://onlinebestellung.local/content/online-bestellung
+*/
+
+.view-display-id-page
+{
+    .views-column,
+    h3
+    {
+        clear: both;
+        .views-field
+        {
+            float: left;
+
+            width: 25%;
+            margin-bottom: 16px;
+            margin-bottom: .75rem;
+        }
+    }
+}
+.view-display-id-page
+{
+    .webform-component
+    {
+        margin: 0;
+        label
+        {
+            display: none;
+        }
+    }
+}
+
+.view-unsere-weine
+{
+    .views-columns-4
+    {
+        padding-bottom: 32px;
+        padding-bottom: 2rem;
+    }
+}
+.form-item-submitted-agb-bestatigung-1
+{
+    clear: both;
+}
+
+/* Unsere Weine */
+
+.view-display-id-page_3
+{
+    .views-column
+    {
+        padding-bottom: 48px;
+        padding-bottom: 3rem;
+    }
+}
+
+.small
+{
+    display: block;
+    float: left;
+
+    width: 25%;
+}
