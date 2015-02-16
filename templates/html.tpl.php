@@ -46,10 +46,8 @@
       <a href="#<?php print $skip_link_anchor; ?>" class="visually-hidden--focusable"><?php print $skip_link_text; ?></a>
     </p>
   <?php endif; ?>
-  <div class="animsition">
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  </div>
 </body>
 </html>
