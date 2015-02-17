@@ -1,0 +1,58 @@
+/* CSS code for the header section
+** added by criscom
+** on all pages
+** different header heights for frontpage and other pages
+** transparent gif loaded via Drupal as logo to provide home link click functionality
+*/
+
+.header
+{
+    // height: 180px;
+}
+
+.header__logo
+{
+    position: relative !important;
+    z-index: 1000;
+
+    background-repeat: no-repeat;
+    body.not-front &
+    {
+        
+        background-position: center top;
+        @include breakpoint($desktop) {
+            background-image: image-url('header-980.png');
+            background-size: 980px 120px;
+            height: 120px;
+        }
+        @include breakpoint($large) {
+            background-image: image-url('header-1200.png');
+            background-size: 1200px 120px;
+            height: 120px;
+        }
+
+        @include breakpoint($xlarge)
+        {
+            background-image: image-url('header-1900.png');
+            background-size: 1900px 120px;
+            height: 120px;
+        }
+    }
+}
+
+
+
+.header-region-wrapper
+{
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    @include breakpoint($desktop)
+    {height: 200px;}
+}
+
+.header__site-name,
+.header__site-slogan
+{
+    @include hide-text;
+}

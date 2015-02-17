@@ -1,0 +1,21 @@
+/* CSS code for the language switcher
+** added by criscom
+** on all pages
+*/
+
+.block-locale {
+    float: right;
+}
+
+ul.language-switcher-locale-url
+{
+    @include no-bullets;
+    li
+    {
+        display: inline;
+        a
+        {
+            color: white;
+        }
+    }
+}

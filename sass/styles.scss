@@ -9,8 +9,7 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
-/* Import /sass/criscom folder with all partials using sass-globbing */
-@import "sass/criscom/**/*"
+
 
 /* Import Bootstrap SCSS files - criscom */
 @import "bootstrap/variables";
@@ -59,8 +58,10 @@
 @import "components/wireframes";
 
 /* Added by criscom */
-@import "components/flexslider";
-@import "components/onlinebestellung";
+@import "criscom/header";
+@import "criscom/shop";
+@import "criscom/language-switcher";
+
 
 /* @TODO: Refactor print states into their respective components. */
 @import "components/print";
