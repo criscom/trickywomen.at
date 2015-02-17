@@ -2504,29 +2504,37 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   position: relative !important;
   z-index: 1000;
   background-repeat: no-repeat;
-}
-body.not-front .header__logo {
   background-position: center top;
+}
+.gecko .header__logo {
+  background-position: left top;
 }
 @media (min-width: 769px) {
   body.not-front .header__logo {
+    height: 120px;
     background-image: url('../images/header-980.png?1424114488');
     background-size: 980px 120px;
-    height: 120px;
   }
 }
 @media (min-width: 980px) {
   body.not-front .header__logo {
+    height: 120px;
     background-image: url('../images/header-1200.png?1424114127');
     background-size: 1200px 120px;
-    height: 120px;
   }
 }
 @media (min-width: 1200px) {
   body.not-front .header__logo {
+    height: 120px;
+    background-image: url('../images/header-1500.png?1424150162');
+    background-size: 1500px 120px;
+  }
+}
+@media (min-width: 1500px) {
+  body.not-front .header__logo {
+    height: 120px;
     background-image: url('../images/header-1900.png?1424096467');
     background-size: 1900px 120px;
-    height: 120px;
   }
 }
 

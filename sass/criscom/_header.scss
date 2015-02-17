@@ -16,26 +16,41 @@
     z-index: 1000;
 
     background-repeat: no-repeat;
+    background-position: center top;
+    .gecko &
+    {
+        background-position: left top;
+    }
     body.not-front &
     {
-        
-        background-position: center top;
-        @include breakpoint($desktop) {
+        // Media queries
+        @include breakpoint($desktop) // min-width 769px;
+        {
+            height: 120px;
+
             background-image: image-url('header-980.png');
             background-size: 980px 120px;
-            height: 120px;
         }
-        @include breakpoint($large) {
+        @include breakpoint($large) // min-width 980px;
+        {
+            height: 120px;
+
             background-image: image-url('header-1200.png');
             background-size: 1200px 120px;
-            height: 120px;
         }
-
-        @include breakpoint($xlarge)
+        @include breakpoint($xlarge) // min-width 1200px;
         {
+            height: 120px;
+
+            background-image: image-url('header-1500.png');
+            background-size: 1500px 120px;
+        }
+        @include breakpoint($xxlarge) // min-width 1500px;
+        {
+            height: 120px;
+
             background-image: image-url('header-1900.png');
             background-size: 1900px 120px;
-            height: 120px;
         }
     }
 }
@@ -46,9 +61,13 @@
 {
     position: relative;
     z-index: 1;
+
     background-color: black;
+
     @include breakpoint($desktop)
-    {height: 200px;}
+    {
+        height: 200px;
+    }
 }
 
 .header__site-name,
