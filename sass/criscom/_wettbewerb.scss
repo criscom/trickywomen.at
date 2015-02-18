@@ -1,0 +1,83 @@
+/* CSS code for festival landing page
+** added by criscom
+** /de/programm/wettbewerb-1
+** http://www.ulla.at/download/tricky/TW_web4.jpg
+*/
+
+.node-program-teaser
+{
+    .group-left {
+        width: 32%;
+    }
+    .group-right {
+        width: 68%;
+    }
+    .group-header
+    {
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+    }
+    .views-row
+    {
+        padding-top: 24px;
+        padding-top: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+
+        border-top: 1px solid black;
+    }
+    .group-right h2
+    {
+        font-size: 1.875 * $base-font-size;
+
+        margin-top: 0;
+
+        text-transform: lowercase;
+
+        color: red;
+    }
+    .group-film-details-wrapper
+    {
+        .field
+        {
+            display: inline-block;
+
+            padding-right: 8px;
+            padding-right: .5rem;
+
+            @extend %base-weight;
+        }
+        .field-name-field-artist-text
+        {
+            @extend %bold-weight;
+        }
+    }
+    .field-name-body
+    {
+        @extend %base-weight;
+    }
+    .field-name-node-link
+    {
+        margin-top: 16px;
+        margin-top: 1rem;
+        a
+        {
+            text-transform: uppercase;
+
+            @extend %base-weight;
+            @include link-colors($normal: black, $hover: $red);
+        }
+    }
+    h2
+    {
+        // margin-bottom: 0;
+    }
+    .field-name-field-datum-und-uhrzeit
+    {
+        span
+        {
+            color: $red;
+            display: block;
+        }
+    }
+}

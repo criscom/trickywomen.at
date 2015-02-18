@@ -1,0 +1,51 @@
+/* CSS code for festival landing page
+** added by criscom
+** /de/festival/2015
+** http://www.ulla.at/download/tricky/TW_web2.jpg
+*/
+
+.view-festival-landing-page
+{
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
+        .views-row
+        {
+            float: left;
+
+            width: 48%;
+            padding-top: 24px;
+            padding-top: 1.5rem;
+            padding-bottom: 24px;
+            padding-bottom: 1.5rem;
+
+            border-top: 1px solid black;
+        }
+        .views-row-odd
+        {
+            margin-right: 2%;
+        }
+        .views-row-even
+        {
+            margin-left: 2%;
+        }
+        .views-row-last {
+            padding-bottom: 0;
+        }
+        .field-name-body p
+        {
+            a
+            {
+                text-transform: uppercase;
+            }
+        }
+    }
+    h2
+    {
+        a
+        {
+            text-decoration: none;
+
+            @include link-colors($normal: black, $hover: $red);
+        }
+    }
+}

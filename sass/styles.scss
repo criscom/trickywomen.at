@@ -58,10 +58,19 @@
 @import "components/wireframes";
 
 /* Added by criscom */
+@import "criscom/fonts.scss";
 @import "criscom/header";
+@import "criscom/header-text";
 @import "criscom/shop";
 @import "criscom/language-switcher";
-
+@import "criscom/main-menu-desktop";
+@import "criscom/main-menu-mobile";
+@import "criscom/frontpage";
+@import "criscom/footer";
+@import "criscom/breadcrumb";
+@import "criscom/festival";
+@import "criscom/programm";
+@import "criscom/wettbewerb";
 
 /* @TODO: Refactor print states into their respective components. */
 @import "components/print";

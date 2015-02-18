@@ -1,0 +1,77 @@
+/* CSS code for the main menu on desktop
+** added by criscom
+** NICE MENUS STYLING
+** on all pages
+** min-width: 768px
+** 
+*/
+
+// Hide responsive menu
+@include breakpoint($desktop)
+{
+    .responsive-menus
+    {
+        display: none;
+    }
+}
+
+// Style nice menus
+
+ul.nice-menu
+{
+    margin-top: 50px;
+}
+
+ul.nice-menu li
+{
+    padding-right: 32px;
+    padding-right: 2rem;
+
+    border: 0;
+    background-color: transparent;
+    &.last
+    {
+        padding-right: 0;
+    }
+    a
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        @extend %base-font;
+        @include link-colors($normal: white, $hover: $red, $active: $red);
+        @extend %medium-weight;
+    }
+    &.active-trail a
+    {
+        color: $red;
+    }
+}
+
+ul.nice-menu-down
+{
+    li.menuparent,
+    li.menuparent:hover
+    {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+// secondary menus 
+
+ul.nice-menu ul
+{
+    top: 2.2em;
+
+    border-top: 0;
+    background-color: white;
+    li
+    {
+        a
+        {
+            text-decoration: none;
+
+            @include link-colors($normal: black, $hover: $red, $visited: black, $active: $red);
+        }
+    }
+}

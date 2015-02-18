@@ -33,15 +33,15 @@ $zen-auto-include-grid-item-base: false;
 // .page,
 .main,
 .region-header,
-.region-footer,
+.region-footer .block,
 .region-bottom {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   max-width: 1200px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-// .header,
+.header,
 .main-content,
 .main-navigation,
 .region-sidebar-first,
@@ -52,7 +52,7 @@ $zen-auto-include-grid-item-base: false;
 }
 
 /* Containers for grid items and flow items. */
-// .header,
+.header,
 .main,
 .footer {
   @include zen-grid-container();

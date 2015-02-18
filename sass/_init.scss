@@ -38,9 +38,13 @@
 @import "library/visually-hidden";
 
 // More helper mixins by criscom
+@import "library/placeholders.scss";
 @import "library/hide_text";
 @import "library/link";
 @import "library/lists";
 
 // Add breakpoint module
 @import "breakpoint";
+
+/* Social Media Icons: Facebook, Vimeo */
+@import "icons/*.png";

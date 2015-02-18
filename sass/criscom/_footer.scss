@@ -1,0 +1,114 @@
+/* CSS code for the footer region
+** added by criscom
+** 
+*/
+
+// footer logo
+#block-block-5 {
+    clear: both;
+    h3 {
+        @include hide-text;
+        background-image: image-url('logo-trickywomen-footer.png');
+        background-size: 107px 107px;
+        display: block;
+        width: 107px;
+        height: 107px;
+        position: relative;
+        right: 0;
+        float: right;
+        margin-bottom: -12px;
+        margin-bottom: -0.75rem;
+    }
+}
+
+footer
+{
+    background-color: $black;
+    .footer-links
+    {
+        ul
+        {
+            margin-top: -6px;
+            margin-top: -.375rem;
+            li
+            {
+                display: inline;
+                a
+                {
+                    @include link-colors($normal: white, $hover: red, $visited: darken(white, 10%));
+                }
+            }
+        }
+    }
+}
+
+// impressum
+
+.footer-links {
+    position: relative;
+}
+
+li.impressum, li.twitter {
+    position: relative;
+    top: 24px;
+    top: 1.25rem;
+    margin-right: 40px;
+    margin-right: 2.5rem;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+li.twitter {
+    margin-left: 40px;
+    margin-left: 2.5rem;
+}
+
+// sprites
+
+@include all-icons-sprites;
+
+li.facebook,
+li.vimeo
+{
+    display: inline-block !important;
+
+    padding: 12px;
+    padding: .75rem;
+
+    background-color: white;
+    a
+    {
+        display: block;
+
+        @include hide-text;
+    }
+}
+
+li.facebook
+{
+        padding-right: 22px;
+        // padding-right: 1.125rem;
+        padding-left: 22px !important;
+        // padding-left: 1.125rem;
+        margin-right: 20px;
+        margin-right: 1.125rem;
+
+    a
+    {
+        width: 25px;
+        height: 45px;
+        @extend .icons-facebook;
+    }
+}
+
+li.vimeo {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    a {
+        width: 45px;
+        height: 39px;
+        @extend .icons-vimeo;
+    }
+}

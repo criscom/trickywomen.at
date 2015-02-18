@@ -1,0 +1,31 @@
+/* CSS code for the fonts integration
+** added by criscom
+** this file contains general font declarations that apply to fonts across the site
+1. UBUNTU MEDIUM 18PT
+2. OSWALD BOLD 44PT
+3. UBUNTU LIGHT 18PT / LINE-HEIGHT 24
+4. OSWALD BOLD 30PT
+5. UBUNTU BOLD 24PT
+6. UBUNTU LIGHT 24PT
+
+*/
+
+h1, h2, h3 {
+    @extend %header-large;
+    text-transform: uppercase;
+}
+
+// All paragraphs with the 'p' tag
+// UBUNTU LIGHT 18PT
+// Font weight: 300;
+p {
+    @extend %base-font;
+    @extend %base-weight;
+}
+
+// all inline links within a div tag
+.not-front div p a,
+.front .view p a {
+    @include link-colors($normal: $red, $hover: black, $visited: lighten($red, 10%));
+    @extend %medium-weight;
+}

@@ -10,7 +10,8 @@
   $active: $normal
   ) {
   color: $normal;
-  &:hover {color: $hover;}
+  &:hover {color: $hover !important;}
   &:visited {color: $visited;}
   &:active {color: $active;}
+  &.active {color: $active;}
 }

@@ -1,0 +1,12 @@
+/* CSS code for the main menu for mobile
+** added by criscom
+** on all pages
+** max-width: 767px
+** 
+*/
+
+// Hide responsive menu
+@include breakpoint($mobilescreens){
+.block-nice-menus {
+    display: none;
+}}

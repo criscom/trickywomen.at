@@ -52,11 +52,19 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = comment.css
 stylesheets[all][] = node.css
 
+; Google Webfonts @fontyourface
+
+fonts[google_fonts_api][] = "Oswald&subset=latin#300"
+fonts[google_fonts_api][] = "Oswald&subset=latin#700"
+fonts[google_fonts_api][] = "Ubuntu&subset=latin#300"
+fonts[google_fonts_api][] = "Ubuntu&subset=latin#500"
+fonts[google_fonts_api][] = "Ubuntu&subset=latin#700"
+
 ; Add anminsition stylesheet
-stylesheets[all][] = css/animsition.min.css
+;stylesheets[all][] = css/animsition.min.css
 
 ; Add oblurlay stylesheet
-stylesheets[all][] = css/oblurlay.min.css
+;stylesheets[all][] = css/oblurlay.min.css
 
 ; Styles for bootstrap menu
 ;stylesheets[all][] = css/bootstrap/bootstrap.min.css

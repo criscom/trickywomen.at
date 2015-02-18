@@ -1,0 +1,96 @@
+/* CSS code for festival landing page
+** added by criscom
+** /de/programm/2015
+** http://www.ulla.at/download/tricky/TW_web3.jpg
+*/
+
+.view-program-landing-page
+{
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
+        .views-row
+        {
+            float: left;
+
+            width: 30%;
+            padding-top: 24px;
+            padding-top: 1.5rem;
+            padding-bottom: 24px;
+            padding-bottom: 1.5rem;
+
+            border-top: 1px solid black;
+        }
+        .views-row-1
+        {
+            margin-right: 2%;
+        }
+        .views-row-2
+        {
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        .views-row-3
+        {
+            margin-left: 2%;
+        }
+        .views-row-4
+        {
+            margin-right: 2%;
+        }
+        .views-row-5
+        {
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        .views-row-6
+        {
+            margin-left: 2%;
+        }
+        .views-row-7
+        {
+            margin-right: 2%;
+        }
+        .views-row-8
+        {
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        .views-row-9
+        {
+            margin-left: 2%;
+        }
+        .views-row-10
+        {
+            margin-right: 2%;
+        }
+        .views-row-11
+        {
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        .views-row-12
+        {
+            margin-left: 2%;
+        }
+        .views-row-last
+        {
+            padding-bottom: 0;
+        }
+        .field-name-body p
+        {
+            a
+            {
+                text-transform: uppercase;
+            }
+        }
+    }
+    h2
+    {
+        a
+        {
+            text-decoration: none;
+
+            @include link-colors($normal: black, $hover: $red);
+        }
+    }
+}

@@ -13,9 +13,17 @@ ul.language-switcher-locale-url
     li
     {
         display: inline;
+        &.first:after {
+            content: " | ";
+            color: white;
+        }
         a
         {
             color: white;
+            @extend %base-font;
+            @extend %medium-weight;
+            @include link-colors($normal: white, $hover: $red, $active: $red);
+            text-decoration: none;
         }
     }
 }

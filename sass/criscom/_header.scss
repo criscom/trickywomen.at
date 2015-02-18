@@ -2,73 +2,44 @@
 ** added by criscom
 ** on all pages
 ** different header heights for frontpage and other pages
-** transparent gif loaded via Drupal as logo to provide home link click functionality
+** no drupal logo in use
 */
 
 .header
 {
-    // height: 180px;
-}
-
-.header__logo
-{
-    position: relative !important;
-    z-index: 1000;
-
-    background-repeat: no-repeat;
-    background-position: center top;
-    .gecko &
-    {
-        background-position: left top;
-    }
-    body.not-front &
-    {
-        // Media queries
-        @include breakpoint($desktop) // min-width 769px;
+    .not-front &, .front & {
+        @include breakpoint($tablet)
         {
             height: 120px;
-
+            background-image: image-url('header-768.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        @include breakpoint($desktop)
+        {
+            height: 200px;
+    
+            background-color: black;
             background-image: image-url('header-980.png');
-            background-size: 980px 120px;
+            background-repeat: no-repeat;
+            background-position: center top;
         }
         @include breakpoint($large) // min-width 980px;
         {
-            height: 120px;
-
+            // height: 120px;
             background-image: image-url('header-1200.png');
-            background-size: 1200px 120px;
+            background-repeat: no-repeat;
+            background-position: center top;
         }
         @include breakpoint($xlarge) // min-width 1200px;
         {
-            height: 120px;
-
-            background-image: image-url('header-1500.png');
-            background-size: 1500px 120px;
-        }
-        @include breakpoint($xxlarge) // min-width 1500px;
-        {
-            height: 120px;
-
+            // height: 120px;
             background-image: image-url('header-1900.png');
-            background-size: 1900px 120px;
-        }
-    }
+            background-repeat: no-repeat;
+            background-position: center top;
+        }}
 }
 
-
-
-.header-region-wrapper
-{
-    position: relative;
-    z-index: 1;
-
-    background-color: black;
-
-    @include breakpoint($desktop)
-    {
-        height: 200px;
-    }
-}
 
 .header__site-name,
 .header__site-slogan

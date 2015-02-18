@@ -1,0 +1,15 @@
+/* CSS code for breadcrumb navigation
+** added by criscom
+** on all pages except the frontpage
+** 
+*/
+
+.breadcrumb {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    li {
+        a {
+            @include link-colors($normal: $red, $hover: black);
+        }
+    }
+}

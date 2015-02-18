@@ -73,8 +73,10 @@ $base-line-height: 24px;
 $rhythm-unit: 'rem';
 
 // The font sizes for h1-h6.
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
+// $h1-font-size: 2    * $base-font-size;
+// $h2-font-size: 1.5  * $base-font-size;
+$h1-font-size: 2.75 * $base-font-size;
+$h2-font-size: 2.75 * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
@@ -103,19 +105,24 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
+$oswald:           Oswald, Arial, Verdana, sans-serif;
+$ubuntu:           Ubuntu, Arial, Verdana, sans-serif;
+
+
 // Now create some variables using the font stacks we want on this site.
-$font-body:       $verdana;
+$font-body:       $ubuntu;
 $font-monospace:  $courier;
 
 // The font family set on the html element.
 $base-font-family:  $font-body;
-
 
 //
 // Colors
 //
 
 $yellow: rgb(255,255,0);
+$red: rgb(255,0,0);
+$black: #231f20;
 
 //
 // Breakpoints
@@ -124,6 +131,7 @@ $yellow: rgb(255,255,0);
 $mediumdesk: 980px 1199px;
 $smalldesk: 769px 979px;
 $smallscreens: max-width 979px;
+$mobilescreens: max-width 768px;
 $phones: max-width 568px;
 $iphone6: 375px 667px;
 $phone6plus: 414px 736px;

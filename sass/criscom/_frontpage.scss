@@ -1,0 +1,65 @@
+/* CSS code for the front page
+** added by criscom
+** on all sections on frontpage
+*/
+
+.front
+{
+    .region-highlighted // style Ticketvorverkauf and Zur Umfrage buttons
+    {
+        .block
+        {
+            float: right;
+            p
+            {
+                // float: left;
+                display: inline-block;
+                .btn-primary
+                {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    h2
+    {
+        // all headers on front 
+        color: $red;
+    }
+}
+
+.front .main h1
+{
+    width: 99px;
+    height: 98px;
+
+    background-image: image-url('logo-news.png');
+    background-repeat: no-repeat;
+    background-size: 99px 98px;
+    // Substitute the header title "Tricky women" with news logo
+
+    @include hide-text;
+}
+
+.front
+{
+    .views-row
+    {
+        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+        padding-bottom: 32rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid black;
+    }
+    .views-row-last {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+}
+
+// Vimeo video frontpage
+
+.front iframe {
+    width: 100%;
+}
