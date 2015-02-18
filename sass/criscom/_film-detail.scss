@@ -1,0 +1,106 @@
+/* CSS code for filme detail
+** added by criscom
+** /de/film/sofia
+** file:///Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive%20Projekte/trickywomen.at/image/film-detail.jpg
+*/
+
+.node-filme.view-mode-full
+{
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
+
+    border-top: 1px solid black;
+
+    @include breakpoint($iphone5)
+    {
+        // 100 % width for screen widths of iphone5 and below
+        .group-left,
+        .group-right
+        {
+            float: none;
+
+            width: 100%;
+        }
+    }
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
+        .group-left
+        {
+            float: left;
+
+            width: 30%;
+        }
+        .group-right
+        {
+            float: left;
+
+            width: 67%;
+            margin-left: 3%;
+        }
+        .field-name-body p
+        {
+            a
+            {
+                text-transform: uppercase;
+            }
+        }
+    }
+    iframe
+    {
+        @include breakpoint($iphone5-6)
+        {
+            width: 100%;
+        }
+    }
+    .group-header
+    {
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+    }
+    h2
+    {
+        @extend .film-header;
+    }
+    .group-film-details-wrapper
+    {
+        .field
+        {
+            display: inline-block;
+
+            padding-right: 8px;
+            padding-right: .5rem;
+
+            @extend %base-weight;
+        }
+        .field-name-field-artist-text
+        {
+            @extend %bold-weight;
+        }
+    }
+    .left-right-wrapper
+    {
+        margin-bottom: 32px;
+        margin-bottom: 2rem;
+        padding-bottom: 41px;
+        // padding-bottom: rem;
+
+        border-bottom: 1px solid black;
+
+        @include clearfix;
+    }
+    .field-name-field-jury-statement
+    {
+        font-style: italic;
+
+        margin-top: 24px;
+        margin-top: 1.5rem;
+        padding-top: 32px;
+        padding-top: 2rem;
+
+        border-top: 1px solid black;
+
+        @extend %base-weight;
+    }
+}

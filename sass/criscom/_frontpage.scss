@@ -14,6 +14,13 @@
             {
                 // float: left;
                 display: inline-block;
+
+                @include breakpoint($iphone4landscape)
+                {
+                    display: block;
+
+                    margin-top: 0;
+                }
                 .btn-primary
                 {
                     text-decoration: none;
@@ -25,6 +32,12 @@
     {
         // all headers on front 
         color: $red;
+        // header break for long headers 
+
+        @include breakpoint($iphone4landscape)
+        {
+            @include hyphens;
+        }
     }
 }
 
@@ -39,6 +52,12 @@
     // Substitute the header title "Tricky women" with news logo
 
     @include hide-text;
+    // Hide icon on small screens
+    @include breakpoint($iphone4landscape)
+    {
+        // height: 130px;
+        // background-position: 0 30px;
+    }
 }
 
 .front
@@ -49,17 +68,58 @@
         margin-bottom: 1.25rem;
         padding-bottom: 32rem;
         padding-bottom: 2rem;
+
         border-bottom: 1px solid black;
     }
-    .views-row-last {
+    .views-row-last
+    {
         margin-bottom: 0;
         padding-bottom: 0;
+
         border-bottom: 0;
     }
 }
 
+
+
 // Vimeo video frontpage
 
-.front iframe {
-    width: 100%;
+.front iframe
+{
+    @include breakpoint($iphone5-6)
+    {
+        width: 100%;
+    }
+}
+
+// links front
+
+.front .view p a
+{
+    @extend .inline-link;
+}
+
+.front ul.download-file
+{
+    @include no-bullets;
+    li
+    {
+        a
+        {
+            @extend .inline-link;
+            @extend %base-font;
+        }
+    }
+}
+
+// align links to left
+.front blockquote
+{
+    margin-left: 0;
+}
+
+// align links to left
+.front .field-name-field-datei-laden ul.download-file
+{
+    padding-left: 0;
 }

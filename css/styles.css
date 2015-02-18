@@ -11,29 +11,30 @@
 ** use the @extend directive to extend with placeholders
 */
 /* line 6, ../sass/library/_placeholders.scss */
-p, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+p, ul.language-switcher-locale-url li a, ul.nice-menu li a, .front ul.download-file li a {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
 /* line 12, ../sass/library/_placeholders.scss */
-p, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a {
+p, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-filme.view-mode-full .group-film-details-wrapper .field, .node-filme.view-mode-full .field-name-field-jury-statement {
   font-weight: 300;
 }
 
 /* line 16, ../sass/library/_placeholders.scss */
-.not-front div p a,
-.front .view p a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+.inline-link, .not-front div p a, .front .view p a, .front ul.download-file li a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
   font-weight: 500;
 }
 
 /* line 20, ../sass/library/_placeholders.scss */
-.node-program-teaser .group-film-details-wrapper .field-name-field-artist-text {
+.node-program-teaser .group-film-details-wrapper .field-name-field-artist-text, .node-filme.view-mode-full .group-film-details-wrapper .field-name-field-artist-text {
   font-weight: 700;
 }
 
 /* line 24, ../sass/library/_placeholders.scss */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Oswald, Arial, Verdana, sans-serif;
   font-size: 44px;
   font-size: 44px;
@@ -1385,23 +1386,22 @@ th {
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  /* line 63, ../sass/layouts/_responsive.scss */
-  .main {
-    /* Move all the children of .main down to make room. */
-    padding-top: 3em;
-    position: relative;
-  }
-
-  /* line 68, ../sass/layouts/_responsive.scss */
-  .main-navigation {
-    /* Move the navbar up inside .main's padding. */
-    position: absolute;
-    top: 0;
-    height: 3em;
-    width: 100%;
-  }
+/* line 63, ../sass/layouts/_responsive.scss */
+.main {
+  /* Move all the children of .main down to make room. */
+  padding-top: 3em;
+  position: relative;
 }
+
+/* line 68, ../sass/layouts/_responsive.scss */
+.main-navigation {
+  /* Move the navbar up inside .main's padding. */
+  position: absolute;
+  top: 0;
+  height: 3em;
+  width: 100%;
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -2866,33 +2866,40 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 
 */
 /* line 13, ../sass/criscom/_fonts.scss */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
-/* line 27, ../sass/criscom/_fonts.scss */
-.not-front div p a,
-.front .view p a {
+/* line 33, ../sass/criscom/_fonts.scss */
+.inline-link, .not-front div p a, .front .view p a, .front ul.download-file li a {
   color: red;
 }
 /* line 13, ../sass/library/_link.scss */
-.not-front div p a:hover,
-.front .view p a:hover {
+.inline-link:hover, .not-front div p a:hover, .front .view p a:hover, .front ul.download-file li a:hover {
   color: black !important;
 }
 /* line 14, ../sass/library/_link.scss */
-.not-front div p a:visited,
-.front .view p a:visited {
+.inline-link:visited, .not-front div p a:visited, .front .view p a:visited, .front ul.download-file li a:visited {
   color: #ff3333;
 }
 /* line 15, ../sass/library/_link.scss */
-.not-front div p a:active,
-.front .view p a:active {
+.inline-link:active, .not-front div p a:active, .front .view p a:active, .front ul.download-file li a:active {
   color: red;
 }
 /* line 16, ../sass/library/_link.scss */
-.not-front div p a.active,
-.front .view p a.active {
+.inline-link.active, .not-front div p a.active, .front .view p a.active, .front ul.download-file li a.active {
+  color: red;
+}
+
+/* line 46, ../sass/criscom/_fonts.scss */
+.film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-bottom: .5rem;
+  text-transform: lowercase;
   color: red;
 }
 
@@ -2902,6 +2909,15 @@ h1, h2, h3 {
 ** different header heights for frontpage and other pages
 ** no drupal logo in use
 */
+@media (min-width: 0px) {
+  /* line 10, ../sass/criscom/_header.scss */
+  .not-front .header, .front .header {
+    height: 120px;
+    background-image: url('../images/header-568.png?1424278128');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
 @media (min-width: 569px) {
   /* line 10, ../sass/criscom/_header.scss */
   .not-front .header, .front .header {
@@ -2938,7 +2954,7 @@ h1, h2, h3 {
   }
 }
 
-/* line 44, ../sass/criscom/_header.scss */
+/* line 56, ../sass/criscom/_header.scss */
 .header__site-name,
 .header__site-slogan {
   font: 0/0 a;
@@ -2970,6 +2986,12 @@ h1, h2, h3 {
   color: white;
   background-color: #231f20;
 }
+@media (max-width: 768px) {
+  /* line 12, ../sass/criscom/_header-text.scss */
+  #block-block-3 {
+    display: none;
+  }
+}
 @media (min-width: 569px) {
   /* line 12, ../sass/criscom/_header-text.scss */
   #block-block-3 {
@@ -2983,46 +3005,46 @@ h1, h2, h3 {
     margin-right: 0;
   }
 }
-/* line 45, ../sass/criscom/_header-text.scss */
+/* line 49, ../sass/criscom/_header-text.scss */
 #block-block-3 h1 {
   margin: 0;
   text-transform: none;
 }
 @media (min-width: 569px) {
-  /* line 45, ../sass/criscom/_header-text.scss */
+  /* line 49, ../sass/criscom/_header-text.scss */
   #block-block-3 h1 {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 769px) {
-  /* line 45, ../sass/criscom/_header-text.scss */
+  /* line 49, ../sass/criscom/_header-text.scss */
   #block-block-3 h1 {
     font-size: 32px;
     font-size: 2rem;
   }
 }
 
-/* line 63, ../sass/criscom/_header-text.scss */
+/* line 67, ../sass/criscom/_header-text.scss */
 .header-date {
   color: yellow;
 }
 @media (min-width: 569px) {
-  /* line 63, ../sass/criscom/_header-text.scss */
+  /* line 67, ../sass/criscom/_header-text.scss */
   .header-date {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 769px) {
-  /* line 63, ../sass/criscom/_header-text.scss */
+  /* line 67, ../sass/criscom/_header-text.scss */
   .header-date {
     font-size: 32px;
     font-size: 2rem;
   }
 }
 
-/* line 79, ../sass/criscom/_header-text.scss */
+/* line 83, ../sass/criscom/_header-text.scss */
 .region-blockgroup-header-wrapper {
   clear: both;
 }
@@ -3083,12 +3105,7 @@ h1, h2, h3 {
 ** added by criscom
 ** on all pages
 */
-/* line 6, ../sass/criscom/_language-switcher.scss */
-.block-locale {
-  float: right;
-}
-
-/* line 10, ../sass/criscom/_language-switcher.scss */
+/* line 7, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url {
   list-style: none;
 }
@@ -3098,20 +3115,20 @@ ul.language-switcher-locale-url li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 13, ../sass/criscom/_language-switcher.scss */
+/* line 10, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li {
   display: inline;
 }
-/* line 16, ../sass/criscom/_language-switcher.scss */
+/* line 13, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li.first:after {
-  content: " | ";
+  content: ' | ';
   color: white;
 }
-/* line 20, ../sass/criscom/_language-switcher.scss */
+/* line 19, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li a {
-  color: white;
-  color: white;
   text-decoration: none;
+  color: white;
+  color: white;
 }
 /* line 13, ../sass/library/_link.scss */
 ul.language-switcher-locale-url li a:hover {
@@ -3128,6 +3145,23 @@ ul.language-switcher-locale-url li a:active {
 /* line 16, ../sass/library/_link.scss */
 ul.language-switcher-locale-url li a.active {
   color: red;
+}
+
+/* line 32, ../sass/criscom/_language-switcher.scss */
+.block-locale {
+  float: right;
+}
+@media (max-width: 768px) {
+  /* line 32, ../sass/criscom/_language-switcher.scss */
+  .block-locale {
+    background-color: #231f20;
+  }
+  /* line 39, ../sass/criscom/_language-switcher.scss */
+  .block-locale ul.language-switcher-locale-url {
+    margin: 0;
+    padding: 8px 4px;
+    padding: .5rem .25rem;
+  }
 }
 
 /* CSS code for the main menu on desktop
@@ -3228,9 +3262,15 @@ ul.nice-menu ul li a.active {
 ** 
 */
 @media (max-width: 768px) {
-  /* line 10, ../sass/criscom/_main-menu-mobile.scss */
+  /* line 11, ../sass/criscom/_main-menu-mobile.scss */
   .block-nice-menus {
     display: none;
+  }
+
+  /* line 15, ../sass/criscom/_main-menu-mobile.scss */
+  .region-navigation {
+    margin: 16px 0;
+    margin: 1rem 0;
   }
 }
 /* CSS code for the front page
@@ -3245,16 +3285,34 @@ ul.nice-menu ul li a.active {
 .front .region-highlighted .block p {
   display: inline-block;
 }
-/* line 17, ../sass/criscom/_frontpage.scss */
+@media (max-width: 480px) {
+  /* line 13, ../sass/criscom/_frontpage.scss */
+  .front .region-highlighted .block p {
+    display: block;
+    margin-top: 0;
+  }
+}
+/* line 24, ../sass/criscom/_frontpage.scss */
 .front .region-highlighted .block p .btn-primary {
   text-decoration: none;
 }
-/* line 24, ../sass/criscom/_frontpage.scss */
+/* line 31, ../sass/criscom/_frontpage.scss */
 .front h2 {
   color: red;
 }
+@media (max-width: 480px) {
+  /* line 31, ../sass/criscom/_frontpage.scss */
+  .front h2 {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+  }
+}
 
-/* line 31, ../sass/criscom/_frontpage.scss */
+/* line 44, ../sass/criscom/_frontpage.scss */
 .front .main h1 {
   width: 99px;
   height: 98px;
@@ -3268,7 +3326,7 @@ ul.nice-menu ul li a.active {
   border: 0;
 }
 
-/* line 46, ../sass/criscom/_frontpage.scss */
+/* line 65, ../sass/criscom/_frontpage.scss */
 .front .views-row {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
@@ -3276,16 +3334,39 @@ ul.nice-menu ul li a.active {
   padding-bottom: 2rem;
   border-bottom: 1px solid black;
 }
-/* line 54, ../sass/criscom/_frontpage.scss */
+/* line 74, ../sass/criscom/_frontpage.scss */
 .front .views-row-last {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 63, ../sass/criscom/_frontpage.scss */
-.front iframe {
-  width: 100%;
+@media (max-width: 767px) {
+  /* line 87, ../sass/criscom/_frontpage.scss */
+  .front iframe {
+    width: 100%;
+  }
+}
+
+/* line 102, ../sass/criscom/_frontpage.scss */
+.front ul.download-file {
+  list-style: none;
+}
+/* line 11, ../sass/library/_lists.scss */
+.front ul.download-file li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 116, ../sass/criscom/_frontpage.scss */
+.front blockquote {
+  margin-left: 0;
+}
+
+/* line 122, ../sass/criscom/_frontpage.scss */
+.front .field-name-field-datei-laden ul.download-file {
+  padding-left: 0;
 }
 
 /* CSS code for the footer region
@@ -3324,11 +3405,17 @@ footer .footer-links ul {
   margin-top: -6px;
   margin-top: -.375rem;
 }
-/* line 33, ../sass/criscom/_footer.scss */
+@media (max-width: 480px) {
+  /* line 29, ../sass/criscom/_footer.scss */
+  footer .footer-links ul {
+    margin-top: 0;
+  }
+}
+/* line 36, ../sass/criscom/_footer.scss */
 footer .footer-links ul li {
   display: inline;
 }
-/* line 36, ../sass/criscom/_footer.scss */
+/* line 39, ../sass/criscom/_footer.scss */
 footer .footer-links ul li a {
   color: white;
 }
@@ -3349,12 +3436,12 @@ footer .footer-links ul li a.active {
   color: white;
 }
 
-/* line 47, ../sass/criscom/_footer.scss */
+/* line 50, ../sass/criscom/_footer.scss */
 .footer-links {
   position: relative;
 }
 
-/* line 51, ../sass/criscom/_footer.scss */
+/* line 54, ../sass/criscom/_footer.scss */
 li.impressum, li.twitter {
   position: relative;
   top: 24px;
@@ -3362,16 +3449,29 @@ li.impressum, li.twitter {
   margin-right: 40px;
   margin-right: 2.5rem;
 }
-/* line 57, ../sass/criscom/_footer.scss */
+@media (max-width: 480px) {
+  /* line 54, ../sass/criscom/_footer.scss */
+  li.impressum, li.twitter {
+    margin-right: 16px;
+    margin-right: 1rem;
+  }
+}
+/* line 64, ../sass/criscom/_footer.scss */
 li.impressum a, li.twitter a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* line 63, ../sass/criscom/_footer.scss */
-li.twitter {
+/* line 70, ../sass/criscom/_footer.scss */
+li.impressum {
   margin-left: 40px;
   margin-left: 2.5rem;
+}
+@media (max-width: 480px) {
+  /* line 70, ../sass/criscom/_footer.scss */
+  li.impressum {
+    margin-left: 0;
+  }
 }
 
 /* line 84, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
@@ -3392,7 +3492,7 @@ li.twitter {
   background-position: 0 -90px;
 }
 
-/* line 72, ../sass/criscom/_footer.scss */
+/* line 82, ../sass/criscom/_footer.scss */
 li.facebook,
 li.vimeo {
   display: inline-block !important;
@@ -3400,7 +3500,7 @@ li.vimeo {
   padding: .75rem;
   background-color: white;
 }
-/* line 81, ../sass/criscom/_footer.scss */
+/* line 91, ../sass/criscom/_footer.scss */
 li.facebook a,
 li.vimeo a {
   display: block;
@@ -3411,25 +3511,33 @@ li.vimeo a {
   border: 0;
 }
 
-/* line 89, ../sass/criscom/_footer.scss */
+/* line 99, ../sass/criscom/_footer.scss */
 li.facebook {
   padding-right: 22px;
   padding-left: 22px !important;
   margin-right: 20px;
   margin-right: 1.125rem;
 }
-/* line 98, ../sass/criscom/_footer.scss */
+@media (max-width: 480px) {
+  /* line 99, ../sass/criscom/_footer.scss */
+  li.facebook {
+    margin-right: 12px;
+    margin-right: 0.75rem;
+    padding-top: 18px;
+  }
+}
+/* line 113, ../sass/criscom/_footer.scss */
 li.facebook a {
   width: 25px;
   height: 45px;
 }
 
-/* line 106, ../sass/criscom/_footer.scss */
+/* line 121, ../sass/criscom/_footer.scss */
 li.vimeo {
   padding-top: 18px;
   padding-bottom: 18px;
 }
-/* line 109, ../sass/criscom/_footer.scss */
+/* line 124, ../sass/criscom/_footer.scss */
 li.vimeo a {
   width: 45px;
   height: 39px;
@@ -3445,7 +3553,16 @@ li.vimeo a {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
-/* line 11, ../sass/criscom/_breadcrumb.scss */
+@media (max-width: 768px) {
+  /* line 7, ../sass/criscom/_breadcrumb.scss */
+  .breadcrumb {
+    margin-top: 24px !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+/* line 17, ../sass/criscom/_breadcrumb.scss */
 .breadcrumb li a {
   color: red;
 }
@@ -3494,12 +3611,8 @@ li.vimeo a {
   .view-festival-landing-page .views-row-last {
     padding-bottom: 0;
   }
-  /* line 36, ../sass/criscom/_festival.scss */
-  .view-festival-landing-page .field-name-body p a {
-    text-transform: uppercase;
-  }
 }
-/* line 44, ../sass/criscom/_festival.scss */
+/* line 38, ../sass/criscom/_festival.scss */
 .view-festival-landing-page h2 a {
   text-decoration: none;
   color: black;
@@ -3519,6 +3632,10 @@ li.vimeo a {
 /* line 16, ../sass/library/_link.scss */
 .view-festival-landing-page h2 a.active {
   color: black;
+}
+/* line 47, ../sass/criscom/_festival.scss */
+.view-festival-landing-page .field-name-body p a {
+  text-transform: uppercase !important;
 }
 
 /* CSS code for festival landing page
@@ -3626,19 +3743,11 @@ li.vimeo a {
 ** http://www.ulla.at/download/tricky/TW_web4.jpg
 */
 /* line 9, ../sass/criscom/_wettbewerb.scss */
-.node-program-teaser .group-left {
-  width: 32%;
-}
-/* line 12, ../sass/criscom/_wettbewerb.scss */
-.node-program-teaser .group-right {
-  width: 68%;
-}
-/* line 15, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .group-header {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 20, ../sass/criscom/_wettbewerb.scss */
+/* line 14, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row {
   padding-top: 24px;
   padding-top: 1.5rem;
@@ -3646,25 +3755,27 @@ li.vimeo a {
   padding-bottom: 1.5rem;
   border-top: 1px solid black;
 }
-/* line 29, ../sass/criscom/_wettbewerb.scss */
-.node-program-teaser .group-right h2 {
-  font-size: 30px;
-  margin-top: 0;
-  text-transform: lowercase;
-  color: red;
+/* line 22, ../sass/criscom/_wettbewerb.scss */
+.node-program-teaser .views-row .group-left {
+  width: 30%;
 }
-/* line 41, ../sass/criscom/_wettbewerb.scss */
+/* line 26, ../sass/criscom/_wettbewerb.scss */
+.node-program-teaser .views-row .group-right {
+  width: 68%;
+  margin-left: 2%;
+}
+/* line 38, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .group-film-details-wrapper .field {
   display: inline-block;
   padding-right: 8px;
   padding-right: .5rem;
 }
-/* line 59, ../sass/criscom/_wettbewerb.scss */
+/* line 56, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-node-link {
   margin-top: 16px;
   margin-top: 1rem;
 }
-/* line 63, ../sass/criscom/_wettbewerb.scss */
+/* line 60, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-node-link a {
   text-transform: uppercase;
   color: black;
@@ -3685,10 +3796,91 @@ li.vimeo a {
 .node-program-teaser .field-name-node-link a.active {
   color: black;
 }
-/* line 77, ../sass/criscom/_wettbewerb.scss */
+/* line 74, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-field-datum-und-uhrzeit span {
-  color: red;
   display: block;
+  color: red;
+}
+
+/* CSS code for filme detail
+** added by criscom
+** /de/film/sofia
+** file:///Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive%20Projekte/trickywomen.at/image/film-detail.jpg
+*/
+/* line 7, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid black;
+}
+@media (max-width: 568px) {
+  /* line 19, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .group-left,
+  .node-filme.view-mode-full .group-right {
+    float: none;
+    width: 100%;
+  }
+}
+@media (min-width: 569px) {
+  /* line 29, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .group-left {
+    float: left;
+    width: 30%;
+  }
+  /* line 35, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .group-right {
+    float: left;
+    width: 67%;
+    margin-left: 3%;
+  }
+  /* line 44, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767px) {
+  /* line 50, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full iframe {
+    width: 100%;
+  }
+}
+/* line 57, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-header {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 68, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-film-details-wrapper .field {
+  display: inline-block;
+  padding-right: 8px;
+  padding-right: .5rem;
+}
+/* line 82, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .left-right-wrapper {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  padding-bottom: 41px;
+  border-bottom: 1px solid black;
+}
+/* line 14, ../sass/bootstrap/mixins/_clearfix.scss */
+.node-filme.view-mode-full .left-right-wrapper:before, .node-filme.view-mode-full .left-right-wrapper:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../sass/bootstrap/mixins/_clearfix.scss */
+.node-filme.view-mode-full .left-right-wrapper:after {
+  clear: both;
+}
+/* line 93, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .field-name-field-jury-statement {
+  font-style: italic;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  border-top: 1px solid black;
 }
 
 /* @TODO: Refactor print states into their respective components. */

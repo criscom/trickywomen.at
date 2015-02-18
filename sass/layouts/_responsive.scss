@@ -59,7 +59,7 @@ $zen-auto-include-grid-item-base: false;
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
+// @media all and (min-width: 480px) {
   .main {
     /* Move all the children of .main down to make room. */
     padding-top: $nav-height;
@@ -72,7 +72,7 @@ $zen-auto-include-grid-item-base: false;
     height: $nav-height;
     width: $zen-grid-width;
   }
-}
+// }
 
 } // End of @if $zen-switch-direction == false
 

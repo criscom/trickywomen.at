@@ -28,15 +28,9 @@
         {
             margin-left: 2%;
         }
-        .views-row-last {
-            padding-bottom: 0;
-        }
-        .field-name-body p
+        .views-row-last
         {
-            a
-            {
-                text-transform: uppercase;
-            }
+            padding-bottom: 0;
         }
     }
     h2
@@ -46,6 +40,13 @@
             text-decoration: none;
 
             @include link-colors($normal: black, $hover: $red);
+        }
+    }
+    .field-name-body p
+    {
+        a
+        {
+            text-transform: uppercase !important;
         }
     }
 }

@@ -7,6 +7,12 @@
 .breadcrumb {
     margin-bottom: 48px;
     margin-bottom: 3rem;
+    @include breakpoint($mobilescreens) {
+        margin-top: 24px !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+    }
     li {
         a {
             @include link-colors($normal: $red, $hover: black);

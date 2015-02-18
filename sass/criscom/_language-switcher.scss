@@ -3,9 +3,6 @@
 ** on all pages
 */
 
-.block-locale {
-    float: right;
-}
 
 ul.language-switcher-locale-url
 {
@@ -13,17 +10,37 @@ ul.language-switcher-locale-url
     li
     {
         display: inline;
-        &.first:after {
-            content: " | ";
+        &.first:after
+        {
+            content: ' | ';
+
             color: white;
         }
         a
         {
+            text-decoration: none;
+
             color: white;
+
             @extend %base-font;
             @extend %medium-weight;
             @include link-colors($normal: white, $hover: $red, $active: $red);
-            text-decoration: none;
+        }
+    }
+}
+
+.block-locale
+{
+    float: right;
+
+    @include breakpoint($mobilescreens)
+    {
+        background-color: $black;
+        ul.language-switcher-locale-url
+        {
+            margin: 0;
+            padding: 8px 4px;
+            padding: .5rem .25rem;
         }
     }
 }

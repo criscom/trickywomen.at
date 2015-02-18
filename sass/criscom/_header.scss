@@ -7,10 +7,21 @@
 
 .header
 {
-    .not-front &, .front & {
+    .not-front &,
+    .front &
+    {
+        @include breakpoint($mobile)
+        {
+            height: 120px;
+
+            background-image: image-url('header-568.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
         @include breakpoint($tablet)
         {
             height: 120px;
+
             background-image: image-url('header-768.png');
             background-repeat: no-repeat;
             background-position: center top;
@@ -18,7 +29,7 @@
         @include breakpoint($desktop)
         {
             height: 200px;
-    
+
             background-color: black;
             background-image: image-url('header-980.png');
             background-repeat: no-repeat;
@@ -37,7 +48,8 @@
             background-image: image-url('header-1900.png');
             background-repeat: no-repeat;
             background-position: center top;
-        }}
+        }
+    }
 }
 
 

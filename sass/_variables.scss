@@ -132,9 +132,11 @@ $mediumdesk: 980px 1199px;
 $smalldesk: 769px 979px;
 $smallscreens: max-width 979px;
 $mobilescreens: max-width 768px;
-$phones: max-width 568px;
+$iphone5-6: max-width 767px;
+$iphone5: max-width 568px;
 $iphone6: 375px 667px;
-$phone6plus: 414px 736px;
+$iphone6plus: 414px 736px;
+$iphone4landscape: max-width 480px;
 
 $xxlarge: min-width 1500px;
 $xlarge: min-width 1200px;

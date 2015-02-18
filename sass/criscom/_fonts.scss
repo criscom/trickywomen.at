@@ -10,22 +10,48 @@
 
 */
 
-h1, h2, h3 {
-    @extend %header-large;
+h1,
+h2,
+h3
+{
     text-transform: uppercase;
+
+    @extend %header-large;
 }
 
 // All paragraphs with the 'p' tag
 // UBUNTU LIGHT 18PT
 // Font weight: 300;
-p {
+p
+{
     @extend %base-font;
     @extend %base-weight;
 }
 
 // all inline links within a div tag
-.not-front div p a,
-.front .view p a {
+
+.inline-link
+{
     @include link-colors($normal: $red, $hover: black, $visited: lighten($red, 10%));
     @extend %medium-weight;
+}
+
+.not-front div p a
+{
+    @extend .inline-link;
+}
+
+// film header
+
+.film-header
+{
+    font-size: 1.875 * $base-font-size;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+
+    text-transform: lowercase;
+
+    color: red;
 }

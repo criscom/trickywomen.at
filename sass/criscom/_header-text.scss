@@ -24,6 +24,10 @@
     color: white;
     background-color: $black;
 
+    @include breakpoint($mobilescreens) {
+        display: none;
+    }
+
     @include breakpoint($tablet)
     {
         width: 412px;

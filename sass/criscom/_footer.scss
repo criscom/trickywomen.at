@@ -30,6 +30,9 @@ footer
         {
             margin-top: -6px;
             margin-top: -.375rem;
+            @include breakpoint($iphone4landscape) {
+                margin-top: 0;
+            }
             li
             {
                 display: inline;
@@ -54,15 +57,22 @@ li.impressum, li.twitter {
     top: 1.25rem;
     margin-right: 40px;
     margin-right: 2.5rem;
+    @include breakpoint($iphone4landscape) {
+        margin-right: 16px;
+        margin-right: 1rem;
+    }
     a {
         text-decoration: none;
         text-transform: uppercase;
     }
 }
 
-li.twitter {
+li.impressum {
     margin-left: 40px;
     margin-left: 2.5rem;
+    @include breakpoint($iphone4landscape) {
+        margin-left: 0;
+    }
 }
 
 // sprites
@@ -94,6 +104,11 @@ li.facebook
         // padding-left: 1.125rem;
         margin-right: 20px;
         margin-right: 1.125rem;
+        @include breakpoint($iphone4landscape) {
+            margin-right: 12px;
+            margin-right: 0.75rem;
+            padding-top: 18px;
+        }
 
     a
     {
