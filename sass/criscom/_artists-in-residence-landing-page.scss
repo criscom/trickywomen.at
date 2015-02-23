@@ -1,23 +1,31 @@
-/* CSS code for festival landing page
+/* CSS code for artist in residence landing page
 ** added by criscom
-** /de/programm/2015
-** http://www.ulla.at/download/tricky/TW_web3.jpg
+** /de/artists-in-residence/2015
+** http://www.ulla.at/download/tricky/TW_web6.jpg
 */
 
-.view-program-landing-page
+.view-artists-in-residence
 {
-            .views-row
+        .views-row
+    {
+        // float: left;
+        width: 100%;
+        // padding-top: 20px;
+        // padding-top: 1.25rem;
+        // padding-bottom: 20px;
+        // padding-bottom: 1.25rem;
+
+        border-top: 1px solid black;
+    }
+    h2
+    {
+        a
         {
-            // float: left;
-
-            width: 100%;
-            padding-top: 18px;
-            padding-top: 1.125rem;
-            padding-bottom: 18px;
-            padding-bottom: 1.125rem;
-
-            border-top: 1px solid black;
+            text-decoration: none;
+            font-size: $h2-landing-page;
+            @include link-colors($normal: black, $hover: $red);
         }
+    }
     @include breakpoint($tablet) // 2 columns on iPad and desktop
     {
         .views-row
@@ -29,7 +37,6 @@
             // padding-top: 1.5rem;
             // padding-bottom: 24px;
             // padding-bottom: 1.5rem;
-
             // border-top: 1px solid black;
         }
         .views-row-1,
@@ -39,7 +46,14 @@
         .views-row-13,
         .views-row-16,
         .views-row-19,
-        .views-row-22
+        .views-row-22,
+        .views-row-25,
+        .views-row-28,
+        .views-row-31,
+        .views-row-34,
+        .views-row-37,
+        .views-row-40,
+        .views-row-41
         {
             clear: left;
 
@@ -52,7 +66,14 @@
         .views-row-14,
         .views-row-17,
         .views-row-20,
-        .views-row-23
+        .views-row-23,
+        .views-row-26,
+        .views-row-29,
+        .views-row-32,
+        .views-row-35,
+        .views-row-40,
+        .views-row-41,
+        .views-row-42
         {
             margin-right: 3%;
             margin-left: 3%;
@@ -64,7 +85,14 @@
         .views-row-15,
         .views-row-18,
         .views-row-21,
-        .views-row-24
+        .views-row-24,
+        .views-row-27,
+        .views-row-30,
+        .views-row-33,
+        .views-row-36,
+        .views-row-39,
+        .views-row-42,
+        .views-row-43
         {
             margin-left: 2%;
         }
@@ -78,15 +106,6 @@
             {
                 text-transform: uppercase;
             }
-        }
-    } // end breakpoint
-    h2
-    {
-        a
-        {
-            text-decoration: none;
-            font-size: $h2-landing-page;
-            @include link-colors($normal: black, $hover: $red);
         }
     }
 }

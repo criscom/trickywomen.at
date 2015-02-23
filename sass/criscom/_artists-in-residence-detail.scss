@@ -1,0 +1,93 @@
+/* CSS code for artists in residence detail
+** added by criscom
+** de/artist-in-residence/jenni-rahkonen
+** http://www.ulla.at/download/tricky/TW_web7.jpg
+*/
+
+.node-artist.view-mode-full
+{
+    @include breakpoint($iphone5)
+    {
+        // 100 % width for screen widths of iphone5 and below
+        .group-left,
+        .group-right
+        {
+            float: none;
+
+            width: 100%;
+        }
+    } // end breakpoint $iphone5
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
+        .group-left
+        {
+            float: left;
+
+            width: 30%;
+        }
+        .group-right
+        {
+            float: left;
+
+            width: 67%;
+            margin-left: 3%;
+        }
+        .field-name-body p
+        {
+            a
+            {
+                text-transform: uppercase;
+            }
+        }
+    } // end brekpoint $tablet
+    .group-header
+    {
+        margin-bottom: 48px;
+        margin-bottom: 3rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+
+        border-bottom: 1px solid black;
+        .label,
+        .label-content
+        {
+            font-size: 1.5 * $base-font-size;
+
+            text-transform: uppercase;
+
+            color: $red;
+        }
+        h2
+        {
+            margin-bottom: 16px;
+            margin-bottom: 1rem;
+        }
+        .label
+        {
+            margin-right: 6px;
+            margin-right: .375rem;
+        }
+        h2 a
+        {
+            text-decoration: none;
+
+            color: black;
+        }
+    }
+    .group-left {
+        .field-name-field-image {
+            img {
+                display: block;
+                margin-bottom: 12px;
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+    iframe
+    {
+        @include breakpoint($iphone5-6)
+        {
+            width: 100%;
+        }
+    }
+}

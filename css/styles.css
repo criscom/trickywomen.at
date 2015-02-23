@@ -3669,43 +3669,69 @@ li.vimeo a {
 ** /de/programm/2015
 ** http://www.ulla.at/download/tricky/TW_web3.jpg
 */
+/* line 9, ../sass/criscom/_programm.scss */
+.view-program-landing-page .views-row {
+  width: 100%;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+  border-top: 1px solid black;
+}
 @media (min-width: 569px) {
-  /* line 11, ../sass/criscom/_programm.scss */
+  /* line 23, ../sass/criscom/_programm.scss */
   .view-program-landing-page .views-row {
     float: left;
     width: 30%;
-    padding-top: 24px;
-    padding-top: 1.5rem;
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
-    border-top: 1px solid black;
   }
-  /* line 23, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-1, .view-program-landing-page .views-row-4, .view-program-landing-page .views-row-7, .view-program-landing-page .views-row-10, .view-program-landing-page .views-row-13, .view-program-landing-page .views-row-16, .view-program-landing-page .views-row-19, .view-program-landing-page .views-row-22 {
-    margin-right: 2%;
+  /* line 35, ../sass/criscom/_programm.scss */
+  .view-program-landing-page .views-row-1,
+  .view-program-landing-page .views-row-4,
+  .view-program-landing-page .views-row-7,
+  .view-program-landing-page .views-row-10,
+  .view-program-landing-page .views-row-13,
+  .view-program-landing-page .views-row-16,
+  .view-program-landing-page .views-row-19,
+  .view-program-landing-page .views-row-22 {
     clear: left;
+    margin-right: 2%;
   }
-  /* line 28, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-2, .view-program-landing-page .views-row-5, .view-program-landing-page .views-row-8, .view-program-landing-page .views-row-11, .view-program-landing-page .views-row-14, .view-program-landing-page .views-row-17, .view-program-landing-page .views-row-20, .view-program-landing-page .views-row-23 {
+  /* line 48, ../sass/criscom/_programm.scss */
+  .view-program-landing-page .views-row-2,
+  .view-program-landing-page .views-row-5,
+  .view-program-landing-page .views-row-8,
+  .view-program-landing-page .views-row-11,
+  .view-program-landing-page .views-row-14,
+  .view-program-landing-page .views-row-17,
+  .view-program-landing-page .views-row-20,
+  .view-program-landing-page .views-row-23 {
     margin-right: 3%;
     margin-left: 3%;
   }
-  /* line 33, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-3, .view-program-landing-page .views-row-6, .view-program-landing-page .views-row-9, .view-program-landing-page .views-row-12, .view-program-landing-page .views-row-15, .view-program-landing-page .views-row-18, .view-program-landing-page .views-row-21, .view-program-landing-page .views-row-24 {
+  /* line 60, ../sass/criscom/_programm.scss */
+  .view-program-landing-page .views-row-3,
+  .view-program-landing-page .views-row-6,
+  .view-program-landing-page .views-row-9,
+  .view-program-landing-page .views-row-12,
+  .view-program-landing-page .views-row-15,
+  .view-program-landing-page .views-row-18,
+  .view-program-landing-page .views-row-21,
+  .view-program-landing-page .views-row-24 {
     margin-left: 2%;
   }
-  /* line 38, ../sass/criscom/_programm.scss */
+  /* line 71, ../sass/criscom/_programm.scss */
   .view-program-landing-page .views-row-last {
     padding-bottom: 0;
   }
-  /* line 44, ../sass/criscom/_programm.scss */
+  /* line 77, ../sass/criscom/_programm.scss */
   .view-program-landing-page .field-name-body p a {
     text-transform: uppercase;
   }
 }
-/* line 52, ../sass/criscom/_programm.scss */
+/* line 85, ../sass/criscom/_programm.scss */
 .view-program-landing-page h2 a {
   text-decoration: none;
+  font-size: 30px;
   color: black;
 }
 /* line 13, ../sass/library/_link.scss */
@@ -3725,7 +3751,7 @@ li.vimeo a {
   color: black;
 }
 
-/* CSS code for festival landing page
+/* CSS code for wettbewerb landing page
 ** added by criscom
 ** /de/programm/wettbewerb-1
 ** http://www.ulla.at/download/tricky/TW_web4.jpg
@@ -3963,7 +3989,322 @@ li.vimeo a {
   }
 }
 
-/* @TODO: Refactor print states into their respective components. */
+/* CSS code for artist in residence landing page
+** added by criscom
+** /de/artists-in-residence/2015
+** http://www.ulla.at/download/tricky/TW_web6.jpg
+*/
+/* line 9, ../sass/criscom/_artists-in-residence-landing-page.scss */
+.view-artists-in-residence .views-row {
+  width: 100%;
+  border-top: 1px solid black;
+}
+/* line 22, ../sass/criscom/_artists-in-residence-landing-page.scss */
+.view-artists-in-residence h2 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+/* line 13, ../sass/library/_link.scss */
+.view-artists-in-residence h2 a:hover {
+  color: red !important;
+}
+/* line 14, ../sass/library/_link.scss */
+.view-artists-in-residence h2 a:visited {
+  color: black;
+}
+/* line 15, ../sass/library/_link.scss */
+.view-artists-in-residence h2 a:active {
+  color: black;
+}
+/* line 16, ../sass/library/_link.scss */
+.view-artists-in-residence h2 a.active {
+  color: black;
+}
+@media (min-width: 569px) {
+  /* line 31, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .views-row {
+    float: left;
+    width: 30%;
+  }
+  /* line 42, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .views-row-1,
+  .view-artists-in-residence .views-row-4,
+  .view-artists-in-residence .views-row-7,
+  .view-artists-in-residence .views-row-10,
+  .view-artists-in-residence .views-row-13,
+  .view-artists-in-residence .views-row-16,
+  .view-artists-in-residence .views-row-19,
+  .view-artists-in-residence .views-row-22,
+  .view-artists-in-residence .views-row-25,
+  .view-artists-in-residence .views-row-28,
+  .view-artists-in-residence .views-row-31,
+  .view-artists-in-residence .views-row-34,
+  .view-artists-in-residence .views-row-37,
+  .view-artists-in-residence .views-row-40,
+  .view-artists-in-residence .views-row-41 {
+    clear: left;
+    margin-right: 2%;
+  }
+  /* line 62, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .views-row-2,
+  .view-artists-in-residence .views-row-5,
+  .view-artists-in-residence .views-row-8,
+  .view-artists-in-residence .views-row-11,
+  .view-artists-in-residence .views-row-14,
+  .view-artists-in-residence .views-row-17,
+  .view-artists-in-residence .views-row-20,
+  .view-artists-in-residence .views-row-23,
+  .view-artists-in-residence .views-row-26,
+  .view-artists-in-residence .views-row-29,
+  .view-artists-in-residence .views-row-32,
+  .view-artists-in-residence .views-row-35,
+  .view-artists-in-residence .views-row-40,
+  .view-artists-in-residence .views-row-41,
+  .view-artists-in-residence .views-row-42 {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  /* line 81, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .views-row-3,
+  .view-artists-in-residence .views-row-6,
+  .view-artists-in-residence .views-row-9,
+  .view-artists-in-residence .views-row-12,
+  .view-artists-in-residence .views-row-15,
+  .view-artists-in-residence .views-row-18,
+  .view-artists-in-residence .views-row-21,
+  .view-artists-in-residence .views-row-24,
+  .view-artists-in-residence .views-row-27,
+  .view-artists-in-residence .views-row-30,
+  .view-artists-in-residence .views-row-33,
+  .view-artists-in-residence .views-row-36,
+  .view-artists-in-residence .views-row-39,
+  .view-artists-in-residence .views-row-42,
+  .view-artists-in-residence .views-row-43 {
+    margin-left: 2%;
+  }
+  /* line 99, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .views-row-last {
+    padding-bottom: 0;
+  }
+  /* line 105, ../sass/criscom/_artists-in-residence-landing-page.scss */
+  .view-artists-in-residence .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+
+/* CSS code for artists in residence detail
+** added by criscom
+** de/artist-in-residence/jenni-rahkonen
+** http://www.ulla.at/download/tricky/TW_web7.jpg
+*/
+@media (max-width: 568px) {
+  /* line 12, ../sass/criscom/_artists-in-residence-detail.scss */
+  .node-artist.view-mode-full .group-left,
+  .node-artist.view-mode-full .group-right {
+    float: none;
+    width: 100%;
+  }
+}
+@media (min-width: 569px) {
+  /* line 22, ../sass/criscom/_artists-in-residence-detail.scss */
+  .node-artist.view-mode-full .group-left {
+    float: left;
+    width: 30%;
+  }
+  /* line 28, ../sass/criscom/_artists-in-residence-detail.scss */
+  .node-artist.view-mode-full .group-right {
+    float: left;
+    width: 67%;
+    margin-left: 3%;
+  }
+  /* line 37, ../sass/criscom/_artists-in-residence-detail.scss */
+  .node-artist.view-mode-full .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+/* line 43, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-header {
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 51, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-header .label,
+.node-artist.view-mode-full .group-header .label-content {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: red;
+}
+/* line 60, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-header h2 {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+/* line 65, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-header .label {
+  margin-right: 6px;
+  margin-right: .375rem;
+}
+/* line 70, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-header h2 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 79, ../sass/criscom/_artists-in-residence-detail.scss */
+.node-artist.view-mode-full .group-left .field-name-field-image img {
+  display: block;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 767px) {
+  /* line 86, ../sass/criscom/_artists-in-residence-detail.scss */
+  .node-artist.view-mode-full iframe {
+    width: 100%;
+  }
+}
+
+/* CSS code for partnerinnen landing page
+** added by criscom
+** /de/partnerinnen/partnerinnen/2015
+** 
+*/
+/* line 10, ../sass/criscom/_partnerinnen.scss */
+.section-partnerinnen .block-views .views-row,
+.section-partners .block-views .views-row {
+  width: 100%;
+  border-top: 1px solid black;
+}
+/* line 23, ../sass/criscom/_partnerinnen.scss */
+.section-partnerinnen .block-views h2 a,
+.section-partners .block-views h2 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+/* line 13, ../sass/library/_link.scss */
+.section-partnerinnen .block-views h2 a:hover,
+.section-partners .block-views h2 a:hover {
+  color: red !important;
+}
+/* line 14, ../sass/library/_link.scss */
+.section-partnerinnen .block-views h2 a:visited,
+.section-partners .block-views h2 a:visited {
+  color: black;
+}
+/* line 15, ../sass/library/_link.scss */
+.section-partnerinnen .block-views h2 a:active,
+.section-partners .block-views h2 a:active {
+  color: black;
+}
+/* line 16, ../sass/library/_link.scss */
+.section-partnerinnen .block-views h2 a.active,
+.section-partners .block-views h2 a.active {
+  color: black;
+}
+/* line 30, ../sass/criscom/_partnerinnen.scss */
+.section-partnerinnen .block-views .block__title,
+.section-partners .block-views .block__title {
+  clear: both;
+  font-size: 24px;
+  padding-top: 48px;
+  padding-top: 3rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 37, ../sass/criscom/_partnerinnen.scss */
+#block-views-partnerinnen-block-1 .section-partnerinnen .block-views .block__title, #block-views-partnerinnen-block-1
+.section-partners .block-views .block__title {
+  padding-top: 0;
+}
+@media (min-width: 769px) {
+  /* line 44, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .views-row,
+  .section-partners .block-views .views-row {
+    float: left;
+    width: 30%;
+  }
+  /* line 55, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .views-row-1, .section-partnerinnen .block-views .views-row-4, .section-partnerinnen .block-views .views-row-7, .section-partnerinnen .block-views .views-row-10, .section-partnerinnen .block-views .views-row-13, .section-partnerinnen .block-views .views-row-16,
+  .section-partnerinnen .block-views .views-row-19, .section-partnerinnen .block-views .views-row-22, .section-partnerinnen .block-views .views-row-25, .section-partnerinnen .block-views .views-row-28, .section-partnerinnen .block-views .views-row-31, .section-partnerinnen .block-views .views-row-34,
+  .section-partnerinnen .block-views .views-row-37, .section-partnerinnen .block-views .views-row-40, .section-partnerinnen .block-views .views-row-41,
+  .section-partners .block-views .views-row-1,
+  .section-partners .block-views .views-row-4,
+  .section-partners .block-views .views-row-7,
+  .section-partners .block-views .views-row-10,
+  .section-partners .block-views .views-row-13,
+  .section-partners .block-views .views-row-16,
+  .section-partners .block-views .views-row-19,
+  .section-partners .block-views .views-row-22,
+  .section-partners .block-views .views-row-25,
+  .section-partners .block-views .views-row-28,
+  .section-partners .block-views .views-row-31,
+  .section-partners .block-views .views-row-34,
+  .section-partners .block-views .views-row-37,
+  .section-partners .block-views .views-row-40,
+  .section-partners .block-views .views-row-41 {
+    clear: left;
+    margin-right: 2%;
+  }
+  /* line 62, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .views-row-2, .section-partnerinnen .block-views .views-row-5, .section-partnerinnen .block-views .views-row-8, .section-partnerinnen .block-views .views-row-11, .section-partnerinnen .block-views .views-row-14, .section-partnerinnen .block-views .views-row-17,
+  .section-partnerinnen .block-views .views-row-20, .section-partnerinnen .block-views .views-row-23, .section-partnerinnen .block-views .views-row-26, .section-partnerinnen .block-views .views-row-29, .section-partnerinnen .block-views .views-row-32, .section-partnerinnen .block-views .views-row-35,
+  .section-partnerinnen .block-views .views-row-40, .section-partnerinnen .block-views .views-row-41, .section-partnerinnen .block-views .views-row-42,
+  .section-partners .block-views .views-row-2,
+  .section-partners .block-views .views-row-5,
+  .section-partners .block-views .views-row-8,
+  .section-partners .block-views .views-row-11,
+  .section-partners .block-views .views-row-14,
+  .section-partners .block-views .views-row-17,
+  .section-partners .block-views .views-row-20,
+  .section-partners .block-views .views-row-23,
+  .section-partners .block-views .views-row-26,
+  .section-partners .block-views .views-row-29,
+  .section-partners .block-views .views-row-32,
+  .section-partners .block-views .views-row-35,
+  .section-partners .block-views .views-row-40,
+  .section-partners .block-views .views-row-41,
+  .section-partners .block-views .views-row-42 {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  /* line 68, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .views-row-3, .section-partnerinnen .block-views .views-row-6, .section-partnerinnen .block-views .views-row-9, .section-partnerinnen .block-views .views-row-12, .section-partnerinnen .block-views .views-row-15, .section-partnerinnen .block-views .views-row-18,
+  .section-partnerinnen .block-views .views-row-21, .section-partnerinnen .block-views .views-row-24, .section-partnerinnen .block-views .views-row-27, .section-partnerinnen .block-views .views-row-30, .section-partnerinnen .block-views .views-row-33, .section-partnerinnen .block-views .views-row-36,
+  .section-partnerinnen .block-views .views-row-39, .section-partnerinnen .block-views .views-row-42, .section-partnerinnen .block-views .views-row-43,
+  .section-partners .block-views .views-row-3,
+  .section-partners .block-views .views-row-6,
+  .section-partners .block-views .views-row-9,
+  .section-partners .block-views .views-row-12,
+  .section-partners .block-views .views-row-15,
+  .section-partners .block-views .views-row-18,
+  .section-partners .block-views .views-row-21,
+  .section-partners .block-views .views-row-24,
+  .section-partners .block-views .views-row-27,
+  .section-partners .block-views .views-row-30,
+  .section-partners .block-views .views-row-33,
+  .section-partners .block-views .views-row-36,
+  .section-partners .block-views .views-row-39,
+  .section-partners .block-views .views-row-42,
+  .section-partners .block-views .views-row-43 {
+    margin-left: 2%;
+  }
+  /* line 74, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .views-row-last,
+  .section-partners .block-views .views-row-last {
+    padding-bottom: 0;
+  }
+  /* line 80, ../sass/criscom/_partnerinnen.scss */
+  .section-partnerinnen .block-views .field-name-body p a,
+  .section-partners .block-views .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+
+/*
+@TODO: Refactor print states into their respective components. */
 /**
  * @file
  * Print styling
