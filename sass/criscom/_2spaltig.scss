@@ -1,0 +1,24 @@
+
+
+.node-2spaltiges-layout
+{
+    .group-left, .group-right {
+        width: 49%;
+    }
+    .group-left {
+        margin-right: 1%;
+    }
+    .group-right {
+        margin-left: 1%;
+    }
+    @include breakpoint($iphone5-6)
+    {
+        .group-left,
+        .group-right
+        {
+            float: none;
+
+            width: 100%;
+        }
+    }
+}

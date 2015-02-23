@@ -10,6 +10,12 @@
     {
         margin-bottom: 24px;
         margin-bottom: 1.5rem;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            margin-bottom: 0.9375rem;
+        }
     }
     .views-row
     {
@@ -53,7 +59,7 @@
     {
         @extend %base-weight;
     }
-    .field-name-node-link
+    .field-name-node-link, .field-name-field-video-embed
     {
         margin-top: 16px;
         margin-top: 1rem;

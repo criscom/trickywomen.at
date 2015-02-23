@@ -1,0 +1,59 @@
+/* CSS code for festival landing page
+** added by criscom
+** /de/festival/2015/preise-jury
+** http://www.ulla.at/download/tricky/TW_web4.jpg
+*/
+
+.node-preise-jury
+{
+    > .field-name-title-field
+    {
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+
+        border-bottom: 1px solid black;
+    }
+    h3
+    {
+        font-size: 1.875 * $base-font-size;
+    }
+}
+
+    .node-person
+    {
+        padding-top: 24px;
+        padding-top: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+
+        border-bottom: 1px solid black;
+        .group-left
+        {
+            width: 30%;
+        }
+        .group-right
+        {
+            width: 68%;
+            margin-left: 2%;
+        }
+    }
+    .group-right h2
+    {
+        font-size: 1.875 * $base-font-size;
+
+        margin-top: 0;
+
+        text-transform: none;
+
+        @extend %base-weight;
+
+        unicode-range: U+00-FF;
+
+        color: red;
+    }
+    .field-name-body
+    {
+        @extend %base-weight;
+    }

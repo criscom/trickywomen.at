@@ -11,29 +11,33 @@
 ** use the @extend directive to extend with placeholders
 */
 /* line 6, ../sass/library/_placeholders.scss */
-p, ul.language-switcher-locale-url li a, ul.nice-menu li a, .front ul.download-file li a {
+p, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a, ul.download-file li a {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
 /* line 12, ../sass/library/_placeholders.scss */
-p, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-filme.view-mode-full .group-film-details-wrapper .field, .node-filme.view-mode-full .field-name-field-jury-statement {
+p, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a, .node-filme.view-mode-full .group-film-details-wrapper .field,
+.node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field, .node-filme.view-mode-full .field-name-field-jury-statement,
+.node-workshops-talks-exhibitions.view-mode-full .field-name-field-jury-statement, .group-right h2, .field-name-body {
   font-weight: 300;
 }
 
 /* line 16, ../sass/library/_placeholders.scss */
-.inline-link, .not-front div p a, .front .view p a, .front ul.download-file li a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
+.inline-link, div.download-file a, .not-front div p a, .front .view p a, ul.download-file li a, ul.language-switcher-locale-url li a, ul.nice-menu li a {
   font-weight: 500;
 }
 
 /* line 20, ../sass/library/_placeholders.scss */
-.node-program-teaser .group-film-details-wrapper .field-name-field-artist-text, .node-filme.view-mode-full .group-film-details-wrapper .field-name-field-artist-text {
+.node-program-teaser .group-film-details-wrapper .field-name-field-artist-text, .node-filme.view-mode-full .group-film-details-wrapper .field-name-field-artist-text,
+.node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field-name-field-artist-text {
   font-weight: 700;
 }
 
 /* line 24, ../sass/library/_placeholders.scss */
 h1,
 h2,
+h2 a,
 h3 {
   font-family: Oswald, Arial, Verdana, sans-serif;
   font-size: 44px;
@@ -42,9 +46,9 @@ h3 {
 }
 
 /* Social Media Icons: Facebook, Vimeo */
-/* line 72, icons/*.png */
-.icons-sprite, .icons-facebook, li.facebook a, .icons-vimeo, li.vimeo a {
-  background-image: url('../images/icons-s010db8ad98.png');
+/* line 88, icons/*.png */
+.icons-sprite, .icons-facebook, li.facebook a, .icons-twitter, li.twitter a, .icons-vimeo, li.vimeo a {
+  background-image: url('../images/icons-s792ea1f352.png');
   background-repeat: no-repeat;
 }
 
@@ -2868,33 +2872,35 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 /* line 13, ../sass/criscom/_fonts.scss */
 h1,
 h2,
+h2 a,
 h3 {
   text-transform: uppercase;
 }
 
-/* line 33, ../sass/criscom/_fonts.scss */
-.inline-link, .not-front div p a, .front .view p a, .front ul.download-file li a {
+/* line 40, ../sass/criscom/_fonts.scss */
+.inline-link, div.download-file a, .not-front div p a, .front .view p a, ul.download-file li a {
   color: red;
 }
 /* line 13, ../sass/library/_link.scss */
-.inline-link:hover, .not-front div p a:hover, .front .view p a:hover, .front ul.download-file li a:hover {
+.inline-link:hover, div.download-file a:hover, .not-front div p a:hover, .front .view p a:hover, ul.download-file li a:hover {
   color: black !important;
 }
 /* line 14, ../sass/library/_link.scss */
-.inline-link:visited, .not-front div p a:visited, .front .view p a:visited, .front ul.download-file li a:visited {
+.inline-link:visited, div.download-file a:visited, .not-front div p a:visited, .front .view p a:visited, ul.download-file li a:visited {
   color: #ff3333;
 }
 /* line 15, ../sass/library/_link.scss */
-.inline-link:active, .not-front div p a:active, .front .view p a:active, .front ul.download-file li a:active {
+.inline-link:active, div.download-file a:active, .not-front div p a:active, .front .view p a:active, ul.download-file li a:active {
   color: red;
 }
 /* line 16, ../sass/library/_link.scss */
-.inline-link.active, .not-front div p a.active, .front .view p a.active, .front ul.download-file li a.active {
+.inline-link.active, div.download-file a.active, .not-front div p a.active, .front .view p a.active, ul.download-file li a.active {
   color: red;
 }
 
-/* line 46, ../sass/criscom/_fonts.scss */
-.film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2 {
+/* line 53, ../sass/criscom/_fonts.scss */
+.film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2,
+.node-workshops-talks-exhibitions.view-mode-full h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -3001,7 +3007,7 @@ h3 {
 @media (min-width: 769px) {
   /* line 12, ../sass/criscom/_header-text.scss */
   #block-block-3 {
-    width: 547px;
+    width: 557px;
     margin-right: 0;
   }
 }
@@ -3349,24 +3355,20 @@ ul.nice-menu ul li a.active {
 }
 
 /* line 102, ../sass/criscom/_frontpage.scss */
-.front ul.download-file {
+ul.download-file {
+  padding-left: 0;
   list-style: none;
 }
 /* line 11, ../sass/library/_lists.scss */
-.front ul.download-file li {
+ul.download-file li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
 
-/* line 116, ../sass/criscom/_frontpage.scss */
+/* line 118, ../sass/criscom/_frontpage.scss */
 .front blockquote {
   margin-left: 0;
-}
-
-/* line 122, ../sass/criscom/_frontpage.scss */
-.front .field-name-field-datei-laden ul.download-file {
-  padding-left: 0;
 }
 
 /* CSS code for the footer region
@@ -3377,45 +3379,45 @@ ul.nice-menu ul li a.active {
 #block-block-5 {
   clear: both;
 }
-/* line 9, ../sass/criscom/_footer.scss */
+/* line 10, ../sass/criscom/_footer.scss */
 #block-block-5 h3 {
+  position: relative;
+  right: 0;
+  display: block;
+  float: right;
+  width: 107px;
+  height: 107px;
+  margin-bottom: -12px;
+  margin-bottom: -.75rem;
+  background-image: url('../images/logo-trickywomen-footer.png?1424205488');
+  background-size: 107px 107px;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  background-image: url('../images/logo-trickywomen-footer.png?1424205488');
-  background-size: 107px 107px;
-  display: block;
-  width: 107px;
-  height: 107px;
-  position: relative;
-  right: 0;
-  float: right;
-  margin-bottom: -12px;
-  margin-bottom: -0.75rem;
 }
 
-/* line 24, ../sass/criscom/_footer.scss */
+/* line 30, ../sass/criscom/_footer.scss */
 footer {
   background-color: #231f20;
 }
-/* line 29, ../sass/criscom/_footer.scss */
+/* line 35, ../sass/criscom/_footer.scss */
 footer .footer-links ul {
   margin-top: -6px;
   margin-top: -.375rem;
 }
 @media (max-width: 480px) {
-  /* line 29, ../sass/criscom/_footer.scss */
+  /* line 35, ../sass/criscom/_footer.scss */
   footer .footer-links ul {
     margin-top: 0;
   }
 }
-/* line 36, ../sass/criscom/_footer.scss */
+/* line 44, ../sass/criscom/_footer.scss */
 footer .footer-links ul li {
   display: inline;
 }
-/* line 39, ../sass/criscom/_footer.scss */
+/* line 47, ../sass/criscom/_footer.scss */
 footer .footer-links ul li a {
   color: white;
 }
@@ -3436,13 +3438,13 @@ footer .footer-links ul li a.active {
   color: white;
 }
 
-/* line 50, ../sass/criscom/_footer.scss */
+/* line 58, ../sass/criscom/_footer.scss */
 .footer-links {
   position: relative;
 }
 
-/* line 54, ../sass/criscom/_footer.scss */
-li.impressum, li.twitter {
+/* line 63, ../sass/criscom/_footer.scss */
+li.impressum {
   position: relative;
   top: 24px;
   top: 1.25rem;
@@ -3450,25 +3452,25 @@ li.impressum, li.twitter {
   margin-right: 2.5rem;
 }
 @media (max-width: 480px) {
-  /* line 54, ../sass/criscom/_footer.scss */
-  li.impressum, li.twitter {
+  /* line 63, ../sass/criscom/_footer.scss */
+  li.impressum {
     margin-right: 16px;
     margin-right: 1rem;
   }
 }
-/* line 64, ../sass/criscom/_footer.scss */
-li.impressum a, li.twitter a {
+/* line 77, ../sass/criscom/_footer.scss */
+li.impressum a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* line 70, ../sass/criscom/_footer.scss */
+/* line 84, ../sass/criscom/_footer.scss */
 li.impressum {
   margin-left: 40px;
   margin-left: 2.5rem;
 }
 @media (max-width: 480px) {
-  /* line 70, ../sass/criscom/_footer.scss */
+  /* line 84, ../sass/criscom/_footer.scss */
   li.impressum {
     margin-left: 0;
   }
@@ -3484,25 +3486,36 @@ li.impressum {
 }
 
 /* line 84, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-vimeo, li.vimeo a {
+.icons-twitter, li.twitter a {
   background-position: 0 -129px;
 }
 /* line 59, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-vimeo:hover, li.vimeo a:hover, .icons-vimeo.vimeo-hover, li.vimeo a.vimeo-hover {
+.icons-twitter:hover, li.twitter a:hover, .icons-twitter.twitter-hover, li.twitter a.twitter-hover {
   background-position: 0 -90px;
 }
 
-/* line 82, ../sass/criscom/_footer.scss */
+/* line 84, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-vimeo, li.vimeo a {
+  background-position: 0 -207px;
+}
+/* line 59, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-vimeo:hover, li.vimeo a:hover, .icons-vimeo.vimeo-hover, li.vimeo a.vimeo-hover {
+  background-position: 0 -168px;
+}
+
+/* line 99, ../sass/criscom/_footer.scss */
 li.facebook,
-li.vimeo {
+li.vimeo,
+li.twitter {
   display: inline-block !important;
   padding: 12px;
   padding: .75rem;
   background-color: white;
 }
-/* line 91, ../sass/criscom/_footer.scss */
+/* line 109, ../sass/criscom/_footer.scss */
 li.facebook a,
-li.vimeo a {
+li.vimeo a,
+li.twitter a {
   display: block;
   font: 0/0 a;
   color: transparent;
@@ -3511,33 +3524,46 @@ li.vimeo a {
   border: 0;
 }
 
-/* line 99, ../sass/criscom/_footer.scss */
+/* line 117, ../sass/criscom/_footer.scss */
 li.facebook {
+  margin-right: 18px;
+  margin-right: 1.125rem;
   padding-right: 22px;
   padding-left: 22px !important;
-  margin-right: 20px;
-  margin-right: 1.125rem;
 }
 @media (max-width: 480px) {
-  /* line 99, ../sass/criscom/_footer.scss */
+  /* line 117, ../sass/criscom/_footer.scss */
   li.facebook {
     margin-right: 12px;
-    margin-right: 0.75rem;
+    margin-right: .75rem;
     padding-top: 18px;
   }
 }
-/* line 113, ../sass/criscom/_footer.scss */
+/* line 132, ../sass/criscom/_footer.scss */
 li.facebook a {
   width: 25px;
   height: 45px;
 }
 
-/* line 121, ../sass/criscom/_footer.scss */
+/* line 141, ../sass/criscom/_footer.scss */
+li.twitter {
+  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
+  margin-left: 18px;
+  margin-left: 1.125rem;
+}
+/* line 147, ../sass/criscom/_footer.scss */
+li.twitter a {
+  width: 45px;
+  height: 39px;
+}
+
+/* line 156, ../sass/criscom/_footer.scss */
 li.vimeo {
   padding-top: 18px;
   padding-bottom: 18px;
 }
-/* line 124, ../sass/criscom/_footer.scss */
+/* line 160, ../sass/criscom/_footer.scss */
 li.vimeo a {
   width: 45px;
   height: 39px;
@@ -3655,67 +3681,29 @@ li.vimeo a {
     border-top: 1px solid black;
   }
   /* line 23, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-1 {
+  .view-program-landing-page .views-row-1, .view-program-landing-page .views-row-4, .view-program-landing-page .views-row-7, .view-program-landing-page .views-row-10, .view-program-landing-page .views-row-13, .view-program-landing-page .views-row-16, .view-program-landing-page .views-row-19, .view-program-landing-page .views-row-22 {
     margin-right: 2%;
+    clear: left;
   }
-  /* line 27, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-2 {
+  /* line 28, ../sass/criscom/_programm.scss */
+  .view-program-landing-page .views-row-2, .view-program-landing-page .views-row-5, .view-program-landing-page .views-row-8, .view-program-landing-page .views-row-11, .view-program-landing-page .views-row-14, .view-program-landing-page .views-row-17, .view-program-landing-page .views-row-20, .view-program-landing-page .views-row-23 {
     margin-right: 3%;
     margin-left: 3%;
   }
-  /* line 32, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-3 {
+  /* line 33, ../sass/criscom/_programm.scss */
+  .view-program-landing-page .views-row-3, .view-program-landing-page .views-row-6, .view-program-landing-page .views-row-9, .view-program-landing-page .views-row-12, .view-program-landing-page .views-row-15, .view-program-landing-page .views-row-18, .view-program-landing-page .views-row-21, .view-program-landing-page .views-row-24 {
     margin-left: 2%;
   }
-  /* line 36, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-4 {
-    margin-right: 2%;
-  }
-  /* line 40, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-5 {
-    margin-right: 3%;
-    margin-left: 3%;
-  }
-  /* line 45, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-6 {
-    margin-left: 2%;
-  }
-  /* line 49, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-7 {
-    margin-right: 2%;
-  }
-  /* line 53, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-8 {
-    margin-right: 3%;
-    margin-left: 3%;
-  }
-  /* line 58, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-9 {
-    margin-left: 2%;
-  }
-  /* line 62, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-10 {
-    margin-right: 2%;
-  }
-  /* line 66, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-11 {
-    margin-right: 3%;
-    margin-left: 3%;
-  }
-  /* line 71, ../sass/criscom/_programm.scss */
-  .view-program-landing-page .views-row-12 {
-    margin-left: 2%;
-  }
-  /* line 75, ../sass/criscom/_programm.scss */
+  /* line 38, ../sass/criscom/_programm.scss */
   .view-program-landing-page .views-row-last {
     padding-bottom: 0;
   }
-  /* line 81, ../sass/criscom/_programm.scss */
+  /* line 44, ../sass/criscom/_programm.scss */
   .view-program-landing-page .field-name-body p a {
     text-transform: uppercase;
   }
 }
-/* line 89, ../sass/criscom/_programm.scss */
+/* line 52, ../sass/criscom/_programm.scss */
 .view-program-landing-page h2 a {
   text-decoration: none;
   color: black;
@@ -3748,6 +3736,12 @@ li.vimeo a {
   margin-bottom: 1.5rem;
 }
 /* line 14, ../sass/criscom/_wettbewerb.scss */
+.node-program-teaser .group-header h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+/* line 20, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row {
   padding-top: 24px;
   padding-top: 1.5rem;
@@ -3755,132 +3749,218 @@ li.vimeo a {
   padding-bottom: 1.5rem;
   border-top: 1px solid black;
 }
-/* line 22, ../sass/criscom/_wettbewerb.scss */
+/* line 28, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-left {
   width: 30%;
 }
-/* line 26, ../sass/criscom/_wettbewerb.scss */
+/* line 32, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-right {
   width: 68%;
   margin-left: 2%;
 }
-/* line 38, ../sass/criscom/_wettbewerb.scss */
+/* line 44, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .group-film-details-wrapper .field {
   display: inline-block;
   padding-right: 8px;
   padding-right: .5rem;
 }
-/* line 56, ../sass/criscom/_wettbewerb.scss */
-.node-program-teaser .field-name-node-link {
+/* line 62, ../sass/criscom/_wettbewerb.scss */
+.node-program-teaser .field-name-node-link, .node-program-teaser .field-name-field-video-embed {
   margin-top: 16px;
   margin-top: 1rem;
 }
-/* line 60, ../sass/criscom/_wettbewerb.scss */
-.node-program-teaser .field-name-node-link a {
+/* line 66, ../sass/criscom/_wettbewerb.scss */
+.node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a {
   text-transform: uppercase;
   color: black;
 }
 /* line 13, ../sass/library/_link.scss */
-.node-program-teaser .field-name-node-link a:hover {
+.node-program-teaser .field-name-node-link a:hover, .node-program-teaser .field-name-field-video-embed a:hover {
   color: red !important;
 }
 /* line 14, ../sass/library/_link.scss */
-.node-program-teaser .field-name-node-link a:visited {
+.node-program-teaser .field-name-node-link a:visited, .node-program-teaser .field-name-field-video-embed a:visited {
   color: black;
 }
 /* line 15, ../sass/library/_link.scss */
-.node-program-teaser .field-name-node-link a:active {
+.node-program-teaser .field-name-node-link a:active, .node-program-teaser .field-name-field-video-embed a:active {
   color: black;
 }
 /* line 16, ../sass/library/_link.scss */
-.node-program-teaser .field-name-node-link a.active {
+.node-program-teaser .field-name-node-link a.active, .node-program-teaser .field-name-field-video-embed a.active {
   color: black;
 }
-/* line 74, ../sass/criscom/_wettbewerb.scss */
+/* line 80, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-field-datum-und-uhrzeit span {
   display: block;
   color: red;
 }
 
-/* CSS code for filme detail
+/* CSS code for filme detail and workshops, talks and exhibitions
 ** added by criscom
 ** /de/film/sofia
 ** file:///Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive%20Projekte/trickywomen.at/image/film-detail.jpg
 */
-/* line 7, ../sass/criscom/_film-detail.scss */
-.node-filme.view-mode-full {
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 24px;
-  padding-bottom: 1.5rem;
-  border-top: 1px solid black;
-}
 @media (max-width: 568px) {
-  /* line 19, ../sass/criscom/_film-detail.scss */
+  /* line 13, ../sass/criscom/_film-detail.scss */
   .node-filme.view-mode-full .group-left,
-  .node-filme.view-mode-full .group-right {
+  .node-filme.view-mode-full .group-right,
+  .node-workshops-talks-exhibitions.view-mode-full .group-left,
+  .node-workshops-talks-exhibitions.view-mode-full .group-right {
     float: none;
     width: 100%;
   }
 }
 @media (min-width: 569px) {
-  /* line 29, ../sass/criscom/_film-detail.scss */
-  .node-filme.view-mode-full .group-left {
+  /* line 23, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .group-left,
+  .node-workshops-talks-exhibitions.view-mode-full .group-left {
     float: left;
     width: 30%;
   }
-  /* line 35, ../sass/criscom/_film-detail.scss */
-  .node-filme.view-mode-full .group-right {
+  /* line 29, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .group-right,
+  .node-workshops-talks-exhibitions.view-mode-full .group-right {
     float: left;
     width: 67%;
     margin-left: 3%;
   }
-  /* line 44, ../sass/criscom/_film-detail.scss */
-  .node-filme.view-mode-full .field-name-body p a {
+  /* line 38, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full .field-name-body p a,
+  .node-workshops-talks-exhibitions.view-mode-full .field-name-body p a {
     text-transform: uppercase;
   }
 }
+/* line 44, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-header,
+.node-workshops-talks-exhibitions.view-mode-full .group-header {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 52, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-header h2 a,
+.node-workshops-talks-exhibitions.view-mode-full .group-header h2 a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 767px) {
-  /* line 50, ../sass/criscom/_film-detail.scss */
-  .node-filme.view-mode-full iframe {
+  /* line 58, ../sass/criscom/_film-detail.scss */
+  .node-filme.view-mode-full iframe,
+  .node-workshops-talks-exhibitions.view-mode-full iframe {
     width: 100%;
   }
 }
-/* line 57, ../sass/criscom/_film-detail.scss */
-.node-filme.view-mode-full .group-header {
+/* line 65, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-header,
+.node-workshops-talks-exhibitions.view-mode-full .group-header {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 68, ../sass/criscom/_film-detail.scss */
-.node-filme.view-mode-full .group-film-details-wrapper .field {
+/* line 76, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .group-film-details-wrapper .field,
+.node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field {
   display: inline-block;
   padding-right: 8px;
   padding-right: .5rem;
 }
-/* line 82, ../sass/criscom/_film-detail.scss */
-.node-filme.view-mode-full .left-right-wrapper {
+/* line 90, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .left-right-wrapper,
+.node-workshops-talks-exhibitions.view-mode-full .left-right-wrapper {
   margin-bottom: 32px;
   margin-bottom: 2rem;
   padding-bottom: 41px;
   border-bottom: 1px solid black;
 }
 /* line 14, ../sass/bootstrap/mixins/_clearfix.scss */
-.node-filme.view-mode-full .left-right-wrapper:before, .node-filme.view-mode-full .left-right-wrapper:after {
+.node-filme.view-mode-full .left-right-wrapper:before, .node-filme.view-mode-full .left-right-wrapper:after,
+.node-workshops-talks-exhibitions.view-mode-full .left-right-wrapper:before,
+.node-workshops-talks-exhibitions.view-mode-full .left-right-wrapper:after {
   content: " ";
   display: table;
 }
 /* line 19, ../sass/bootstrap/mixins/_clearfix.scss */
-.node-filme.view-mode-full .left-right-wrapper:after {
+.node-filme.view-mode-full .left-right-wrapper:after,
+.node-workshops-talks-exhibitions.view-mode-full .left-right-wrapper:after {
   clear: both;
 }
-/* line 93, ../sass/criscom/_film-detail.scss */
-.node-filme.view-mode-full .field-name-field-jury-statement {
+/* line 101, ../sass/criscom/_film-detail.scss */
+.node-filme.view-mode-full .field-name-field-jury-statement,
+.node-workshops-talks-exhibitions.view-mode-full .field-name-field-jury-statement {
   font-style: italic;
   margin-top: 24px;
   margin-top: 1.5rem;
   padding-top: 32px;
   padding-top: 2rem;
   border-top: 1px solid black;
+}
+
+/* CSS code for festival landing page
+** added by criscom
+** /de/festival/2015/preise-jury
+** http://www.ulla.at/download/tricky/TW_web4.jpg
+*/
+/* line 9, ../sass/criscom/_preise-jury.scss */
+.node-preise-jury > .field-name-title-field {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 18, ../sass/criscom/_preise-jury.scss */
+.node-preise-jury h3 {
+  font-size: 30px;
+}
+
+/* line 24, ../sass/criscom/_preise-jury.scss */
+.node-person {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 32, ../sass/criscom/_preise-jury.scss */
+.node-person .group-left {
+  width: 30%;
+}
+/* line 36, ../sass/criscom/_preise-jury.scss */
+.node-person .group-right {
+  width: 68%;
+  margin-left: 2%;
+}
+
+/* line 42, ../sass/criscom/_preise-jury.scss */
+.group-right h2 {
+  font-size: 30px;
+  margin-top: 0;
+  text-transform: none;
+  unicode-range: U+00-FF;
+  color: red;
+}
+
+/* line 5, ../sass/criscom/_2spaltig.scss */
+.node-2spaltiges-layout .group-left, .node-2spaltiges-layout .group-right {
+  width: 49%;
+}
+/* line 8, ../sass/criscom/_2spaltig.scss */
+.node-2spaltiges-layout .group-left {
+  margin-right: 1%;
+}
+/* line 11, ../sass/criscom/_2spaltig.scss */
+.node-2spaltiges-layout .group-right {
+  margin-left: 1%;
+}
+@media (max-width: 767px) {
+  /* line 16, ../sass/criscom/_2spaltig.scss */
+  .node-2spaltiges-layout .group-left,
+  .node-2spaltiges-layout .group-right {
+    float: none;
+    width: 100%;
+  }
 }
 
 /* @TODO: Refactor print states into their respective components. */

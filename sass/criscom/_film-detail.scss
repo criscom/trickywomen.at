@@ -1,18 +1,12 @@
-/* CSS code for filme detail
+/* CSS code for filme detail and workshops, talks and exhibitions
 ** added by criscom
 ** /de/film/sofia
 ** file:///Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive%20Projekte/trickywomen.at/image/film-detail.jpg
 */
 
-.node-filme.view-mode-full
+.node-filme.view-mode-full,
+.node-workshops-talks-exhibitions.view-mode-full
 {
-    padding-top: 24px;
-    padding-top: 1.5rem;
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
-
-    border-top: 1px solid black;
-
     @include breakpoint($iphone5)
     {
         // 100 % width for screen widths of iphone5 and below
@@ -45,6 +39,20 @@
             {
                 text-transform: uppercase;
             }
+        }
+    }
+    .group-header
+    {
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
+
+        border-bottom: 1px solid black;
+        h2 a
+        {
+            text-decoration: none;
+            color: black;
         }
     }
     iframe

@@ -4,20 +4,26 @@
 */
 
 // footer logo
-#block-block-5 {
+#block-block-5
+{
     clear: both;
-    h3 {
-        @include hide-text;
-        background-image: image-url('logo-trickywomen-footer.png');
-        background-size: 107px 107px;
-        display: block;
-        width: 107px;
-        height: 107px;
+    h3
+    {
         position: relative;
         right: 0;
+
+        display: block;
         float: right;
+
+        width: 107px;
+        height: 107px;
         margin-bottom: -12px;
-        margin-bottom: -0.75rem;
+        margin-bottom: -.75rem;
+
+        background-image: image-url('logo-trickywomen-footer.png');
+        background-size: 107px 107px;
+
+        @include hide-text;
     }
 }
 
@@ -30,7 +36,9 @@ footer
         {
             margin-top: -6px;
             margin-top: -.375rem;
-            @include breakpoint($iphone4landscape) {
+
+            @include breakpoint($iphone4landscape)
+            {
                 margin-top: 0;
             }
             li
@@ -47,30 +55,39 @@ footer
 
 // impressum
 
-.footer-links {
+.footer-links
+{
     position: relative;
 }
 
-li.impressum, li.twitter {
+li.impressum
+{
     position: relative;
     top: 24px;
     top: 1.25rem;
+
     margin-right: 40px;
     margin-right: 2.5rem;
-    @include breakpoint($iphone4landscape) {
+
+    @include breakpoint($iphone4landscape)
+    {
         margin-right: 16px;
         margin-right: 1rem;
     }
-    a {
+    a
+    {
         text-decoration: none;
         text-transform: uppercase;
     }
 }
 
-li.impressum {
+li.impressum
+{
     margin-left: 40px;
     margin-left: 2.5rem;
-    @include breakpoint($iphone4landscape) {
+
+    @include breakpoint($iphone4landscape)
+    {
         margin-left: 0;
     }
 }
@@ -80,7 +97,8 @@ li.impressum {
 @include all-icons-sprites;
 
 li.facebook,
-li.vimeo
+li.vimeo,
+li.twitter
 {
     display: inline-block !important;
 
@@ -98,32 +116,52 @@ li.vimeo
 
 li.facebook
 {
-        padding-right: 22px;
-        // padding-right: 1.125rem;
-        padding-left: 22px !important;
-        // padding-left: 1.125rem;
-        margin-right: 20px;
-        margin-right: 1.125rem;
-        @include breakpoint($iphone4landscape) {
-            margin-right: 12px;
-            margin-right: 0.75rem;
-            padding-top: 18px;
-        }
+    // padding-left: 1.125rem;
+    margin-right: 18px;
+    margin-right: 1.125rem;
+    padding-right: 22px;
+    // padding-right: 1.125rem;
+    padding-left: 22px !important;
 
+    @include breakpoint($iphone4landscape)
+    {
+        margin-right: 12px;
+        margin-right: .75rem;
+        padding-top: 18px;
+    }
     a
     {
         width: 25px;
         height: 45px;
+
         @extend .icons-facebook;
     }
 }
 
-li.vimeo {
-    padding-top: 18px;
+li.twitter
+{
     padding-bottom: 18px;
-    a {
+    padding-bottom: 1.125rem;
+    margin-left: 18px;
+    margin-left: 1.125rem;
+    a
+    {
         width: 45px;
         height: 39px;
+
+        @extend .icons-twitter;
+    }
+}
+
+li.vimeo
+{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    a
+    {
+        width: 45px;
+        height: 39px;
+
         @extend .icons-vimeo;
     }
 }

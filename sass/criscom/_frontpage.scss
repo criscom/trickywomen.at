@@ -99,8 +99,10 @@
     @extend .inline-link;
 }
 
-.front ul.download-file
+ul.download-file
 {
+    padding-left: 0;
+
     @include no-bullets;
     li
     {
@@ -116,10 +118,4 @@
 .front blockquote
 {
     margin-left: 0;
-}
-
-// align links to left
-.front .field-name-field-datei-laden ul.download-file
-{
-    padding-left: 0;
 }

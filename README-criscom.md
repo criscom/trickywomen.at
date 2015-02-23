@@ -156,8 +156,17 @@ Each teaser on the [Program landing page](http://www.ulla.at/download/tricky/TW_
 	* Title(Website)
 	* Teaser image
 	* Text area
+	* Text area (Award 1)
 	* Entity reference => reference to Content Type "Film"
-	* Text area
+	* Text area (Award 2)
+	* Entity reference => reference to Content Type "Film"
+	* Text area (Award 3)
+	* Entity reference => reference to Content Type "Film"
+	* Text area (Award 4)
+	* Entity reference => reference to Content Type "Film"
+	* Text area (Award 5)	
+	* Entity reference => reference to Content Type "Film"
+	
 
 ##Content Type Gallery (Eröffnung, Impressionen, Preisverleihung) (done)
 * **Content Type: Gallery**

@@ -34,7 +34,7 @@
     }
     @include breakpoint($desktop)
     {
-        width: 547px;
+        width: 557px; //547px;
         margin-right: 0;
     }
     @include breakpoint($large)

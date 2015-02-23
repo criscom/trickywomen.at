@@ -12,6 +12,7 @@
 
 h1,
 h2,
+h2 a,
 h3
 {
     text-transform: uppercase;
@@ -27,6 +28,12 @@ p
     @extend %base-font;
     @extend %base-weight;
 }
+
+div.download-file a
+        {
+            @extend .inline-link;
+            @extend %base-font;
+        }
 
 // all inline links within a div tag
 
