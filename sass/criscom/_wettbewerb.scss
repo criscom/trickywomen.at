@@ -25,6 +25,17 @@
         padding-bottom: 1.5rem;
 
         border-top: 1px solid black;
+    .group-left {
+        float: right;
+        width: 100%
+    }
+    .group-right {
+        float: left;
+        width: 100%;
+    }
+
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
         .group-left
         {
             width: 30%;
@@ -34,6 +45,7 @@
             width: 68%;
             margin-left: 2%;
         }
+    }
     }
     .group-right h2
     {

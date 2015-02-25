@@ -21,14 +21,25 @@
     }
 }
 
-    .node-person
-    {
-        padding-top: 24px;
-        padding-top: 1.5rem;
-        padding-bottom: 24px;
-        padding-bottom: 1.5rem;
+.node-person
+{
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
 
-        border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    .group-left {
+        float: right;
+        width: 100%
+    }
+    .group-right {
+        float: left;
+        width: 100%;
+    }
+
+    @include breakpoint($tablet) // 2 columns on iPad and desktop
+    {
         .group-left
         {
             width: 30%;
@@ -39,21 +50,21 @@
             margin-left: 2%;
         }
     }
-    .group-right h2
-    {
-        font-size: 1.875 * $base-font-size;
+}
+.group-right h2
+{
+    font-size: 1.875 * $base-font-size;
 
-        margin-top: 0;
+    margin-top: 0;
 
-        text-transform: none;
+    text-transform: none;
 
-        @extend %base-weight;
+    color: red;
 
-        unicode-range: U+00-FF;
-
-        color: red;
-    }
-    .field-name-body
-    {
-        @extend %base-weight;
-    }
+    @extend %base-weight;
+    unicode-range: U+00-FF;
+}
+.field-name-body
+{
+    @extend %base-weight;
+}

@@ -17,7 +17,8 @@ p, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a,
 }
 
 /* line 12, ../sass/library/_placeholders.scss */
-p, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a, .node-filme.view-mode-full .group-film-details-wrapper .field,
+p, .view-unsere-weine h2, .view-unsere-weine .field-name-body,
+.view-unsere-weine .field-content, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a, .node-filme.view-mode-full .group-film-details-wrapper .field,
 .node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field, .node-filme.view-mode-full .field-name-field-jury-statement,
 .node-workshops-talks-exhibitions.view-mode-full .field-name-field-jury-statement, .group-right h2, .field-name-body {
   font-weight: 300;
@@ -3059,59 +3060,97 @@ h3 {
 ** added by criscom
 ** URL: /de/shop
 */
-/* line 8, ../sass/criscom/_shop.scss */
-.view-display-id-page .views-column,
-.view-display-id-page h3 {
-  clear: both;
+/* line 10, ../sass/criscom/_shop.scss */
+.section-shop fieldset input,
+.section-shop fieldset select,
+.section-shop fieldset textarea {
+  width: 96%;
 }
-/* line 12, ../sass/criscom/_shop.scss */
-.view-display-id-page .views-column .views-field,
-.view-display-id-page h3 .views-field {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  margin-bottom: .75rem;
+/* line 18, ../sass/criscom/_shop.scss */
+.section-shop label a {
+  color: red;
+}
+/* line 13, ../sass/library/_link.scss */
+.section-shop label a:hover {
+  color: black !important;
+}
+/* line 14, ../sass/library/_link.scss */
+.section-shop label a:visited {
+  color: red;
+}
+/* line 15, ../sass/library/_link.scss */
+.section-shop label a:active {
+  color: red;
+}
+/* line 16, ../sass/library/_link.scss */
+.section-shop label a.active {
+  color: red;
 }
 
-/* line 24, ../sass/criscom/_shop.scss */
-.view-display-id-page .webform-component {
-  margin: 0;
+@media (min-width: 0px) {
+  /* line 27, ../sass/criscom/_shop.scss */
+  .view-unsere-weine .view-field-field-image {
+    float: right;
+    width: 100%;
+    margin-right: 0;
+  }
 }
-/* line 27, ../sass/criscom/_shop.scss */
-.view-display-id-page .webform-component label {
+@media (min-width: 569px) {
+  /* line 37, ../sass/criscom/_shop.scss */
+  .view-unsere-weine .views-field-field-image {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 47, ../sass/criscom/_shop.scss */
+  .view-unsere-weine .views-field-body,
+  .view-unsere-weine .order-wrapper {
+    padding-left: 32%;
+  }
+}
+/* line 53, ../sass/criscom/_shop.scss */
+.view-unsere-weine .views-row {
+  clear: both;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 64, ../sass/criscom/_shop.scss */
+.view-unsere-weine .views-row-first {
+  margin-top: 48px;
+  margin-top: 3rem;
+  border-top: 1px solid black;
+}
+/* line 71, ../sass/criscom/_shop.scss */
+.view-unsere-weine .views-row-last {
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+}
+/* line 76, ../sass/criscom/_shop.scss */
+.view-unsere-weine h2 {
+  font-size: 24px;
+  margin-top: 0;
+  text-transform: none;
+}
+/* line 93, ../sass/criscom/_shop.scss */
+.view-unsere-weine .order-wrapper .inline-label {
   display: none;
-}
-
-/* line 36, ../sass/criscom/_shop.scss */
-.view-unsere-weine .views-columns-4 {
-  padding-bottom: 32px;
-  padding-bottom: 2rem;
-}
-
-/* line 42, ../sass/criscom/_shop.scss */
-.form-item-submitted-agb-bestatigung-1 {
-  clear: both;
-}
-
-/* Unsere Weine */
-/* line 51, ../sass/criscom/_shop.scss */
-.view-display-id-page_3 .views-column {
-  padding-bottom: 48px;
-  padding-bottom: 3rem;
-}
-
-/* line 58, ../sass/criscom/_shop.scss */
-.small {
-  display: block;
-  float: left;
-  width: 25%;
 }
 
 /* CSS code for the language switcher
 ** added by criscom
 ** on all pages
 */
-/* line 7, ../sass/criscom/_language-switcher.scss */
+/* line 6, ../sass/criscom/_language-switcher.scss */
+.locale-untranslated {
+  color: white;
+}
+
+/* line 10, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url {
   list-style: none;
 }
@@ -3121,16 +3160,16 @@ ul.language-switcher-locale-url li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 10, ../sass/criscom/_language-switcher.scss */
+/* line 13, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li {
   display: inline;
 }
-/* line 13, ../sass/criscom/_language-switcher.scss */
+/* line 16, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li.first:after {
   content: ' | ';
   color: white;
 }
-/* line 19, ../sass/criscom/_language-switcher.scss */
+/* line 22, ../sass/criscom/_language-switcher.scss */
 ul.language-switcher-locale-url li a {
   text-decoration: none;
   color: white;
@@ -3153,20 +3192,28 @@ ul.language-switcher-locale-url li a.active {
   color: red;
 }
 
-/* line 32, ../sass/criscom/_language-switcher.scss */
+/* line 35, ../sass/criscom/_language-switcher.scss */
 .block-locale {
   float: right;
 }
 @media (max-width: 768px) {
-  /* line 32, ../sass/criscom/_language-switcher.scss */
+  /* line 35, ../sass/criscom/_language-switcher.scss */
   .block-locale {
     background-color: #231f20;
   }
-  /* line 39, ../sass/criscom/_language-switcher.scss */
+  /* line 42, ../sass/criscom/_language-switcher.scss */
   .block-locale ul.language-switcher-locale-url {
     margin: 0;
     padding: 8px 4px;
     padding: .5rem .25rem;
+  }
+}
+@media (min-width: 769px) {
+  /* line 35, ../sass/criscom/_language-switcher.scss */
+  .block-locale {
+    position: absolute;
+    top: 100px;
+    right: 0;
   }
 }
 
@@ -3190,20 +3237,33 @@ ul.nice-menu {
 
 /* line 25, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu li {
-  padding-right: 32px;
-  padding-right: 2rem;
   border: 0;
   background-color: transparent;
 }
-/* line 32, ../sass/criscom/_main-menu-desktop.scss */
+@media (min-width: 769px) {
+  /* line 25, ../sass/criscom/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 12px;
+    padding-right: .7rem;
+  }
+}
+@media (min-width: 980px) {
+  /* line 25, ../sass/criscom/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 32px;
+    padding-right: 2rem;
+  }
+}
+/* line 41, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu li.last {
   padding-right: 0;
 }
-/* line 36, ../sass/criscom/_main-menu-desktop.scss */
+/* line 45, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+  padding-right: 0 !important;
 }
 /* line 13, ../sass/library/_link.scss */
 ul.nice-menu li a:hover {
@@ -3221,25 +3281,25 @@ ul.nice-menu li a:active {
 ul.nice-menu li a.active {
   color: red;
 }
-/* line 44, ../sass/criscom/_main-menu-desktop.scss */
+/* line 55, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
   color: red;
 }
 
-/* line 52, ../sass/criscom/_main-menu-desktop.scss */
+/* line 63, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 62, ../sass/criscom/_main-menu-desktop.scss */
+/* line 73, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu ul {
   top: 2.2em;
   border-top: 0;
   background-color: white;
 }
-/* line 70, ../sass/criscom/_main-menu-desktop.scss */
+/* line 81, ../sass/criscom/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -3777,25 +3837,37 @@ li.vimeo a {
 }
 /* line 28, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-left {
-  width: 30%;
+  float: right;
+  width: 100%;
 }
 /* line 32, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-right {
-  width: 68%;
-  margin-left: 2%;
+  float: left;
+  width: 100%;
 }
-/* line 44, ../sass/criscom/_wettbewerb.scss */
+@media (min-width: 569px) {
+  /* line 39, ../sass/criscom/_wettbewerb.scss */
+  .node-program-teaser .views-row .group-left {
+    width: 30%;
+  }
+  /* line 43, ../sass/criscom/_wettbewerb.scss */
+  .node-program-teaser .views-row .group-right {
+    width: 68%;
+    margin-left: 2%;
+  }
+}
+/* line 56, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .group-film-details-wrapper .field {
   display: inline-block;
   padding-right: 8px;
   padding-right: .5rem;
 }
-/* line 62, ../sass/criscom/_wettbewerb.scss */
+/* line 74, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-node-link, .node-program-teaser .field-name-field-video-embed {
   margin-top: 16px;
   margin-top: 1rem;
 }
-/* line 66, ../sass/criscom/_wettbewerb.scss */
+/* line 78, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a {
   text-transform: uppercase;
   color: black;
@@ -3816,7 +3888,7 @@ li.vimeo a {
 .node-program-teaser .field-name-node-link a.active, .node-program-teaser .field-name-field-video-embed a.active {
   color: black;
 }
-/* line 80, ../sass/criscom/_wettbewerb.scss */
+/* line 92, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .field-name-field-datum-und-uhrzeit span {
   display: block;
   color: red;
@@ -3951,21 +4023,33 @@ li.vimeo a {
 }
 /* line 32, ../sass/criscom/_preise-jury.scss */
 .node-person .group-left {
-  width: 30%;
+  float: right;
+  width: 100%;
 }
 /* line 36, ../sass/criscom/_preise-jury.scss */
 .node-person .group-right {
-  width: 68%;
-  margin-left: 2%;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 569px) {
+  /* line 43, ../sass/criscom/_preise-jury.scss */
+  .node-person .group-left {
+    width: 30%;
+  }
+  /* line 47, ../sass/criscom/_preise-jury.scss */
+  .node-person .group-right {
+    width: 68%;
+    margin-left: 2%;
+  }
 }
 
-/* line 42, ../sass/criscom/_preise-jury.scss */
+/* line 54, ../sass/criscom/_preise-jury.scss */
 .group-right h2 {
   font-size: 30px;
   margin-top: 0;
   text-transform: none;
-  unicode-range: U+00-FF;
   color: red;
+  unicode-range: U+00-FF;
 }
 
 /* line 5, ../sass/criscom/_2spaltig.scss */
@@ -4299,6 +4383,69 @@ li.vimeo a {
   /* line 80, ../sass/criscom/_partnerinnen.scss */
   .section-partnerinnen .block-views .field-name-body p a,
   .section-partners .block-views .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+
+/* CSS code for the "Bildmaterial" in the presse section
+** added by criscom
+** /de/presse/2015
+** 
+*/
+/* line 7, ../sass/criscom/_presse-bildmaterial.scss */
+#block-views-bildmaterial-block {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+/* line 10, ../sass/criscom/_presse-bildmaterial.scss */
+#block-views-bildmaterial-block h2.block__title {
+  font-size: 30px;
+}
+
+/* line 16, ../sass/criscom/_presse-bildmaterial.scss */
+.node-bildmaterial .field-collection-container {
+  border-bottom-color: black;
+}
+
+/* line 22, ../sass/criscom/_presse-bildmaterial.scss */
+.view-bildmaterial .field-collection-view {
+  width: 100%;
+  margin-top: 32px;
+  margin-top: 2rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  border-top: 1px solid black;
+  border-bottom: 0;
+}
+/* line 34, ../sass/criscom/_presse-bildmaterial.scss */
+.view-bildmaterial .field-collection-view:nth-child(1), .view-bildmaterial .field-collection-view:nth-child(4), .view-bildmaterial .field-collection-view:nth-child(7), .view-bildmaterial .field-collection-view:nth-child(10) {
+  margin-left: 0;
+  clear: both;
+}
+/* line 41, ../sass/criscom/_presse-bildmaterial.scss */
+.view-bildmaterial .field-collection-view .download-file li a {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+/* line 45, ../sass/criscom/_presse-bildmaterial.scss */
+.view-bildmaterial h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+@media (min-width: 769px) {
+  /* line 54, ../sass/criscom/_presse-bildmaterial.scss */
+  .view-bildmaterial .field-collection-view {
+    float: left;
+    width: 30%;
+  }
+  /* line 90, ../sass/criscom/_presse-bildmaterial.scss */
+  .view-bildmaterial .field-name-body p a {
     text-transform: uppercase;
   }
 }

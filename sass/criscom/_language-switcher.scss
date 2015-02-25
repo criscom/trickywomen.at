@@ -3,6 +3,9 @@
 ** on all pages
 */
 
+.locale-untranslated {
+    color: white;
+}
 
 ul.language-switcher-locale-url
 {
@@ -42,5 +45,10 @@ ul.language-switcher-locale-url
             padding: 8px 4px;
             padding: .5rem .25rem;
         }
+    }
+    @include breakpoint($desktop) {
+        position: absolute;
+        top: 100px;
+        right: 0;
     }
 }

@@ -149,6 +149,37 @@ Each teaser on the [Program landing page](http://www.ulla.at/download/tricky/TW_
 	* Image (multiple) with caption for the left sidebar
 	* Film referenzieren
 
+## 6. Content type "Partnerinnen (logos)" done
+
+- Always set "Sprache" to "Sprachneutral" as we do not translate logos
+- Choose the type of
+- Logos are ordered according to "Art of Partnerin": views blocks
+- Logos within their blocks are ordere by publishing date (ascending): first logo added will be displayed on top
+- A normal page "1spaltiges Layout - Einfache Seite" for "PartnerInnen", which is translated into English, is created and the blocks are pulled into the page via the blocks area.
+
+## 7. Content type "Presse" (done)
+
+- Create a page for "Presse" for each year
+- Load "Pressekontakt", "Pressetext", "Pressemappe" and Teaser MP4 to display at the top of the "Presse" page
+- For "Bildmaterial" for the films we will use a different content type "Bildmaterial" and pull "Bildmaterial" in through block views.
+
+## 8. Content type "Bildmaterial"
+
+- For the press section of each year
+- Sort by Taxonomy "Festival year" and Taxonomy "Wettbewerbe"
+- Don not translate, show on every language
+- Create a field collection
+- Create a page for each "Wettbewerb"
+- Translate page into English but do not remove German text (we'll hide the German text on the English site with CSS)
+- Load all images for one "Wettbewerb" in one page using field collection
+- Load web optimized image
+- Provide high definition image as a direct download
+- Credit area as a text field, one for each language
+- Create only one view and sort by taxonomy terms
+- Create a new [block view for each year "Bildmaterial 2015"](http://trickywomen.einstern.at/de/admin/structure/views/view/bildmaterial)
+
+
+
 ##Content Type Gewinnerinnen
 - **Create content type "Gewinnerinnen"**
 - Required fields:

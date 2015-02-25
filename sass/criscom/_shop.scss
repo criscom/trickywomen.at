@@ -3,62 +3,96 @@
 ** URL: /de/shop
 */
 
-.view-display-id-page
+.section-shop
 {
-    .views-column,
-    h3
+    fieldset
     {
-        clear: both;
-        .views-field
+        input,
+        select,
+        textarea
         {
-            float: left;
-
-            width: 25%;
-            margin-bottom: 16px;
-            margin-bottom: .75rem;
+            width: 96%;
         }
     }
-}
-.view-display-id-page
-{
-    .webform-component
-    {
-        margin: 0;
-        label
-        {
-            display: none;
-        }
+    label {
+        a{
+                @include link-colors($normal: red, $hover: black);}
     }
 }
 
 .view-unsere-weine
 {
-    .views-columns-4
+    @include breakpoint($mobile)
     {
-        padding-bottom: 32px;
-        padding-bottom: 2rem;
+        .view-field-field-image
+        {
+            float: right;
+
+            width: 100%;
+            margin-right: 0;
+        }
     }
-}
-.form-item-submitted-agb-bestatigung-1
-{
-    clear: both;
-}
-
-/* Unsere Weine */
-
-.view-display-id-page_3
-{
-    .views-column
+    @include breakpoint($tablet)
     {
-        padding-bottom: 48px;
-        padding-bottom: 3rem;
+        .views-field-field-image
+        {
+            float: left;
+
+            width: 30%;
+            margin-right: 2%;
+        }
     }
-}
+    @include breakpoint($desktop)
+    {
+        .views-field-body,
+        .order-wrapper
+        {
+            padding-left: 32%;
+        }
+    }
+    .views-row
+    {
+        clear: both;
 
-.small
-{
-    display: block;
-    float: left;
+        padding-top: 24px;
+        padding-top: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
 
-    width: 25%;
+        border-bottom: 1px solid black;
+    }
+    .views-row-first
+    {
+        margin-top: 48px;
+        margin-top: 3rem;
+
+        border-top: 1px solid black;
+    }
+    .views-row-last
+    {
+        margin-bottom: 48px;
+        margin-bottom: 3rem;
+    }
+    h2
+    {
+        font-size: 1.5 * $base-font-size;
+
+        margin-top: 0;
+
+        text-transform: none;
+
+        @extend %base-weight;
+    }
+    .field-name-body,
+    .field-content
+    {
+        @extend %base-weight;
+    }
+    .order-wrapper
+    {
+        .inline-label
+        {
+            display: none;
+        }
+    }
 }

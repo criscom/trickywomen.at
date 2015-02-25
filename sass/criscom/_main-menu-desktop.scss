@@ -24,11 +24,20 @@ ul.nice-menu
 
 ul.nice-menu li
 {
-    padding-right: 32px;
-    padding-right: 2rem;
-
     border: 0;
     background-color: transparent;
+
+    @include breakpoint($desktop) {
+        padding-right: 12px;
+        padding-right: .7rem;
+    }
+
+    @include breakpoint($large)
+    {
+        padding-right: 32px;
+        padding-right: 2rem;
+    }
+
     &.last
     {
         padding-right: 0;
@@ -37,9 +46,11 @@ ul.nice-menu li
     {
         text-decoration: none;
         text-transform: uppercase;
+
         @extend %base-font;
         @include link-colors($normal: white, $hover: $red, $active: $red);
         @extend %medium-weight;
+        padding-right: 0 !important;
     }
     &.active-trail a
     {
