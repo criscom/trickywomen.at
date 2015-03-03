@@ -3837,12 +3837,12 @@ li.vimeo a {
 }
 /* line 28, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-left {
-  float: right;
+  float: left;
   width: 100%;
 }
 /* line 32, ../sass/criscom/_wettbewerb.scss */
 .node-program-teaser .views-row .group-right {
-  float: left;
+  float: right;
   width: 100%;
 }
 @media (min-width: 569px) {
@@ -4407,7 +4407,29 @@ li.vimeo a {
   border-bottom-color: black;
 }
 
-/* line 22, ../sass/criscom/_presse-bildmaterial.scss */
+/* line 21, ../sass/criscom/_presse-bildmaterial.scss */
+.field-name-field-dokumente-link a {
+  color: red;
+  font-size: 18px;
+}
+/* line 13, ../sass/library/_link.scss */
+.field-name-field-dokumente-link a:hover {
+  color: black !important;
+}
+/* line 14, ../sass/library/_link.scss */
+.field-name-field-dokumente-link a:visited {
+  color: red;
+}
+/* line 15, ../sass/library/_link.scss */
+.field-name-field-dokumente-link a:active {
+  color: red;
+}
+/* line 16, ../sass/library/_link.scss */
+.field-name-field-dokumente-link a.active {
+  color: red;
+}
+
+/* line 29, ../sass/criscom/_presse-bildmaterial.scss */
 .view-bildmaterial .field-collection-view {
   width: 100%;
   margin-top: 32px;
@@ -4419,12 +4441,12 @@ li.vimeo a {
   border-top: 1px solid black;
   border-bottom: 0;
 }
-/* line 34, ../sass/criscom/_presse-bildmaterial.scss */
+/* line 41, ../sass/criscom/_presse-bildmaterial.scss */
 .view-bildmaterial .field-collection-view:nth-child(1), .view-bildmaterial .field-collection-view:nth-child(4), .view-bildmaterial .field-collection-view:nth-child(7), .view-bildmaterial .field-collection-view:nth-child(10) {
   margin-left: 0;
   clear: both;
 }
-/* line 41, ../sass/criscom/_presse-bildmaterial.scss */
+/* line 48, ../sass/criscom/_presse-bildmaterial.scss */
 .view-bildmaterial .field-collection-view .download-file li a {
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -4433,18 +4455,18 @@ li.vimeo a {
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 45, ../sass/criscom/_presse-bildmaterial.scss */
+/* line 52, ../sass/criscom/_presse-bildmaterial.scss */
 .view-bildmaterial h2 {
   font-size: 24px;
   margin-bottom: 0;
 }
 @media (min-width: 769px) {
-  /* line 54, ../sass/criscom/_presse-bildmaterial.scss */
+  /* line 61, ../sass/criscom/_presse-bildmaterial.scss */
   .view-bildmaterial .field-collection-view {
     float: left;
     width: 30%;
   }
-  /* line 90, ../sass/criscom/_presse-bildmaterial.scss */
+  /* line 97, ../sass/criscom/_presse-bildmaterial.scss */
   .view-bildmaterial .field-name-body p a {
     text-transform: uppercase;
   }

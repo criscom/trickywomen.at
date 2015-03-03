@@ -17,6 +17,13 @@
     border-bottom-color: black;
 }
 
+.field-name-field-dokumente-link {
+    a {
+        @include link-colors($normal: red, $hover: black);
+        font-size: 18px;
+    }
+}
+
 .view-bildmaterial
 {
     .field-collection-view
