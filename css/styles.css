@@ -2899,14 +2899,18 @@ h3 {
   color: red;
 }
 
-/* line 53, ../sass/criscom/_fonts.scss */
+/* line 51, ../sass/criscom/_fonts.scss */
+p.small {
+  font-size: 16px;
+}
+
+/* line 57, ../sass/criscom/_fonts.scss */
 .film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2,
 .node-workshops-talks-exhibitions.view-mode-full h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
   margin-bottom: .5rem;
-  text-transform: lowercase;
   color: red;
 }
 

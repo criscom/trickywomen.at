@@ -48,6 +48,10 @@ div.download-file a
     @extend .inline-link;
 }
 
+p.small {
+    font-size: $base-font-size;
+}
+
 // film header
 
 .film-header
@@ -58,7 +62,7 @@ div.download-file a
     margin-bottom: 8px;
     margin-bottom: .5rem;
 
-    text-transform: lowercase;
+    // text-transform: lowercase;
 
     color: red;
 }
