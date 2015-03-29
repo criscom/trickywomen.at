@@ -20,7 +20,7 @@ p, div.download-file a, ul.language-switcher-locale-url li a, ul.nice-menu li a,
 p, .view-unsere-weine h2, .view-unsere-weine .field-name-body,
 .view-unsere-weine .field-content, .node-program-teaser .group-film-details-wrapper .field, .node-program-teaser .field-name-body, .node-program-teaser .field-name-node-link a, .node-program-teaser .field-name-field-video-embed a, .node-filme.view-mode-full .group-film-details-wrapper .field,
 .node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field, .node-filme.view-mode-full .field-name-field-jury-statement,
-.node-workshops-talks-exhibitions.view-mode-full .field-name-field-jury-statement, .group-right h2, .field-name-body {
+.node-workshops-talks-exhibitions.view-mode-full .field-name-field-jury-statement, .group-right h2, .field-name-body, .node-filme.view-mode-view_mode_1 .group-film-details-wrapper .field, .node-filme.view-mode-view_mode_1 .field-name-field-jury-statement {
   font-weight: 300;
 }
 
@@ -31,7 +31,13 @@ p, .view-unsere-weine h2, .view-unsere-weine .field-name-body,
 
 /* line 20, ../sass/library/_placeholders.scss */
 .node-program-teaser .group-film-details-wrapper .field-name-field-artist-text, .node-filme.view-mode-full .group-film-details-wrapper .field-name-field-artist-text,
-.node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field-name-field-artist-text {
+.node-workshops-talks-exhibitions.view-mode-full .group-film-details-wrapper .field-name-field-artist-text, .gewinnerinnen .field-name-field-award-1,
+.gewinnerinnen .field-name-field-award-2,
+.gewinnerinnen .field-name-field-award-3,
+.gewinnerinnen .field-name-field-award-4,
+.gewinnerinnen .field-name-field-award-5,
+.gewinnerinnen .field-name-field-award-6,
+.gewinnerinnen .field-name-field-award-7, .field-name-field-jury-statement div, .node-filme.view-mode-view_mode_1 .group-film-details-wrapper .field-name-field-artist-text {
   font-weight: 700;
 }
 
@@ -2906,7 +2912,7 @@ p.small {
 
 /* line 57, ../sass/criscom/_fonts.scss */
 .film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2,
-.node-workshops-talks-exhibitions.view-mode-full h2 {
+.node-workshops-talks-exhibitions.view-mode-full h2, .node-filme.view-mode-view_mode_1 h2 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -4474,6 +4480,108 @@ li.vimeo a {
   .view-bildmaterial .field-name-body p a {
     text-transform: uppercase;
   }
+}
+
+/* CSS code for gewinnerinnen
+** added by criscom
+** /de/film/sofia
+** file:///Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive%20Projekte/trickywomen.at/image/film-detail.jpg
+*/
+/* line 8, ../sass/criscom/_gewinnerinnen.scss */
+.gewinnerinnen .field-name-field-award-1,
+.gewinnerinnen .field-name-field-award-2,
+.gewinnerinnen .field-name-field-award-3,
+.gewinnerinnen .field-name-field-award-4,
+.gewinnerinnen .field-name-field-award-5,
+.gewinnerinnen .field-name-field-award-6,
+.gewinnerinnen .field-name-field-award-7 {
+  text-transform: uppercase;
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+/* line 20, ../sass/criscom/_gewinnerinnen.scss */
+.gewinnerinnen .field-name-field-award-1 {
+  margin-top: 0;
+}
+
+@media (max-width: 568px) {
+  /* line 36, ../sass/criscom/_gewinnerinnen.scss */
+  .node-filme.view-mode-view_mode_1 .group-left,
+  .node-filme.view-mode-view_mode_1 .group-right {
+    float: none;
+    width: 100%;
+  }
+}
+@media (min-width: 569px) {
+  /* line 46, ../sass/criscom/_gewinnerinnen.scss */
+  .node-filme.view-mode-view_mode_1 .group-left {
+    float: left;
+    width: 30%;
+  }
+  /* line 52, ../sass/criscom/_gewinnerinnen.scss */
+  .node-filme.view-mode-view_mode_1 .group-right {
+    float: left;
+    width: 67%;
+    margin-left: 3%;
+  }
+  /* line 61, ../sass/criscom/_gewinnerinnen.scss */
+  .node-filme.view-mode-view_mode_1 .field-name-body p a {
+    text-transform: uppercase;
+  }
+}
+/* line 67, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .group-header {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+/* line 75, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .group-header h2 a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 767px) {
+  /* line 81, ../sass/criscom/_gewinnerinnen.scss */
+  .node-filme.view-mode-view_mode_1 iframe {
+    width: 100%;
+  }
+}
+/* line 88, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .group-header {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/* line 99, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .group-film-details-wrapper .field {
+  display: inline-block;
+  padding-right: 8px;
+  padding-right: .5rem;
+}
+/* line 113, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .left-right-wrapper {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  padding-bottom: 41px;
+  border-bottom: 1px solid black;
+}
+/* line 14, ../sass/bootstrap/mixins/_clearfix.scss */
+.node-filme.view-mode-view_mode_1 .left-right-wrapper:before, .node-filme.view-mode-view_mode_1 .left-right-wrapper:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../sass/bootstrap/mixins/_clearfix.scss */
+.node-filme.view-mode-view_mode_1 .left-right-wrapper:after {
+  clear: both;
+}
+/* line 124, ../sass/criscom/_gewinnerinnen.scss */
+.node-filme.view-mode-view_mode_1 .field-name-field-jury-statement {
+  font-style: italic;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 /*
