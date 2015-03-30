@@ -11,7 +11,6 @@
         .views-row
         {
             float: left;
-
             width: 48%;
             padding-top: 24px;
             padding-top: 1.5rem;
@@ -19,6 +18,9 @@
             padding-bottom: 1.5rem;
 
             border-top: 1px solid black;
+        }
+        .views-row-3 {
+            clear:both;
         }
         .views-row-odd
         {
