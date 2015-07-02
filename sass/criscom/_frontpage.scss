@@ -80,7 +80,18 @@
     }
 }
 
-
+.front {
+    .wrapper {
+        .group-left,
+        .group-right {
+            float: left;
+            width: 49%;
+        }
+        .group-left {
+            margin-right: 2%;
+        }
+    }
+}
 
 // Vimeo video frontpage
 

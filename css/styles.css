@@ -3417,14 +3417,25 @@ ul.nice-menu ul li a.active {
   border-bottom: 0;
 }
 
+/* line 85, ../sass/criscom/_frontpage.scss */
+.front .wrapper .group-left,
+.front .wrapper .group-right {
+  float: left;
+  width: 49%;
+}
+/* line 90, ../sass/criscom/_frontpage.scss */
+.front .wrapper .group-left {
+  margin-right: 2%;
+}
+
 @media (max-width: 767px) {
-  /* line 87, ../sass/criscom/_frontpage.scss */
+  /* line 98, ../sass/criscom/_frontpage.scss */
   .front iframe {
     width: 100%;
   }
 }
 
-/* line 102, ../sass/criscom/_frontpage.scss */
+/* line 113, ../sass/criscom/_frontpage.scss */
 ul.download-file {
   padding-left: 0;
   list-style: none;
@@ -3436,7 +3447,7 @@ ul.download-file li {
   margin-left: 0;
 }
 
-/* line 118, ../sass/criscom/_frontpage.scss */
+/* line 129, ../sass/criscom/_frontpage.scss */
 .front blockquote {
   margin-left: 0;
 }
