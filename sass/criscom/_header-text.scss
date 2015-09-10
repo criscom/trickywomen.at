@@ -30,11 +30,11 @@
 
     @include breakpoint($tablet)
     {
-        width: 412px;
+        width: 372px; // 412px;
     }
     @include breakpoint($desktop)
     {
-        width: 557px; //547px;
+        width: 517px; // 557px; //547px;
         margin-right: 0;
     }
     @include breakpoint($large)
@@ -66,7 +66,7 @@
 
 .header-date
 {
-    color: $yellow;
+    color: $red2016;
 
     @include breakpoint($tablet)
     {
