@@ -10,16 +10,23 @@
         .block
         {
             float: right;
+            @include breakpoint($iphone5){
+                margin-bottom: 0;
+            }
             p
             {
                 // float: left;
                 display: inline-block;
+                margin-top: 0;
+                @include breakpoint($iphone5-6){
+                    margin-bottom: 0;
+                    margin-top: 16px;
+                    margin-top: 1rem;
+            }
 
                 @include breakpoint($iphone4landscape)
                 {
                     display: block;
-
-                    margin-top: 0;
                 }
                 .btn-primary
                 {
@@ -41,6 +48,10 @@
             @include hyphens;
         }
     }
+}
+
+.front h3.subtitle {
+
 }
 
 .front .main h1
@@ -65,14 +76,25 @@
 
 .front
 {
+    .view {
+        clear: both;
+    }
+
     .views-row
     {
-        margin-bottom: 20px;
-        margin-bottom: 1.25rem;
-        padding-bottom: 32rem;
-        padding-bottom: 2rem;
+        // margin-bottom: 20px;
+        // margin-bottom: 1.25rem;
+        // padding-bottom: 32rem;
+        // padding-bottom: 2rem;
+        padding-top: 24px;
+        padding-top: 1.5rem;
+        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
 
-        border-bottom: 1px solid black;
+        // border-bottom: 1px solid black;
+    }
+    .views-row-first {
+        padding-top: 0;
     }
     .views-row-last
     {
@@ -132,4 +154,16 @@ ul.download-file
 .front blockquote
 {
     margin-left: 0;
+}
+
+// more link
+
+.front a.more-link {
+    display: block;
+    text-align: left;
+    padding-top: 8px;
+    padding-top: .5rem; 
+    &:after {
+        content: " >>"
+    }
 }

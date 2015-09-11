@@ -16,7 +16,16 @@ h2 a,
 h3
 {
     text-transform: uppercase;
+}
+
+h1,
+h2,
+h2 a {
     @extend %header-large;
+}
+
+.field-name-field-subtitle h3 {
+    @extend %header-subtitle;
 }
 
 // All paragraphs with the 'p' tag

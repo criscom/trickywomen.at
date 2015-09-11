@@ -44,17 +44,19 @@ p, .view-unsere-weine h2, .view-unsere-weine .field-name-body,
 /* line 24, ../sass/library/_placeholders.scss */
 h1,
 h2,
-h2 a,
-h3 {
+h2 a {
   font-family: Oswald, Arial, Verdana, sans-serif;
+  font-size: 32px !important;
+  font-size: 2rem !important;
   font-weight: 700;
 }
 
-h1,
-h2,
-h2 a {
-  font-size: 32px !important;
-  font-size: 2rem !important;
+/* line 33, ../sass/library/_placeholders.scss */
+.field-name-field-subtitle h3 {
+  font-family: Oswald, Arial, Verdana, sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* Social Media Icons: Facebook, Vimeo */
@@ -2889,7 +2891,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 39, ../sass/criscom/_fonts.scss */
+/* line 48, ../sass/criscom/_fonts.scss */
 .inline-link, div.download-file a, .not-front div p a, .front .view p a, ul.download-file li a {
   color: red;
 }
@@ -2910,12 +2912,12 @@ h3 {
   color: red;
 }
 
-/* line 50, ../sass/criscom/_fonts.scss */
+/* line 59, ../sass/criscom/_fonts.scss */
 p.small {
   font-size: 16px;
 }
 
-/* line 56, ../sass/criscom/_fonts.scss */
+/* line 65, ../sass/criscom/_fonts.scss */
 .film-header, .node-program-teaser .group-right h2, .node-filme.view-mode-full h2,
 .node-workshops-talks-exhibitions.view-mode-full h2, .node-filme.view-mode-view_mode_1 h2 {
   font-size: 30px;
@@ -3362,29 +3364,43 @@ ul.nice-menu ul li a.active {
 .front .region-highlighted .block {
   float: right;
 }
-/* line 13, ../sass/criscom/_frontpage.scss */
-.front .region-highlighted .block p {
-  display: inline-block;
-}
-@media (max-width: 480px) {
-  /* line 13, ../sass/criscom/_frontpage.scss */
-  .front .region-highlighted .block p {
-    display: block;
-    margin-top: 0;
+@media (max-width: 568px) {
+  /* line 10, ../sass/criscom/_frontpage.scss */
+  .front .region-highlighted .block {
+    margin-bottom: 0;
   }
 }
-/* line 24, ../sass/criscom/_frontpage.scss */
+/* line 16, ../sass/criscom/_frontpage.scss */
+.front .region-highlighted .block p {
+  display: inline-block;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  /* line 16, ../sass/criscom/_frontpage.scss */
+  .front .region-highlighted .block p {
+    margin-bottom: 0;
+    margin-top: 16px;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  /* line 16, ../sass/criscom/_frontpage.scss */
+  .front .region-highlighted .block p {
+    display: block;
+  }
+}
+/* line 31, ../sass/criscom/_frontpage.scss */
 .front .region-highlighted .block p .btn-primary {
   text-decoration: none;
 }
-/* line 31, ../sass/criscom/_frontpage.scss */
+/* line 38, ../sass/criscom/_frontpage.scss */
 .front h2 {
   color: red;
   font-size: 32px;
   font-size: 2rem;
 }
 @media (max-width: 480px) {
-  /* line 31, ../sass/criscom/_frontpage.scss */
+  /* line 38, ../sass/criscom/_frontpage.scss */
   .front h2 {
     word-wrap: break-word;
     -webkit-hyphens: auto;
@@ -3395,7 +3411,7 @@ ul.nice-menu ul li a.active {
   }
 }
 
-/* line 46, ../sass/criscom/_frontpage.scss */
+/* line 57, ../sass/criscom/_frontpage.scss */
 .front .main h1 {
   display: none;
   width: 99px;
@@ -3410,40 +3426,47 @@ ul.nice-menu ul li a.active {
   border: 0;
 }
 
-/* line 68, ../sass/criscom/_frontpage.scss */
-.front .views-row {
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
-  padding-bottom: 32rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid black;
+/* line 79, ../sass/criscom/_frontpage.scss */
+.front .view {
+  clear: both;
 }
-/* line 77, ../sass/criscom/_frontpage.scss */
+/* line 83, ../sass/criscom/_frontpage.scss */
+.front .views-row {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+/* line 96, ../sass/criscom/_frontpage.scss */
+.front .views-row-first {
+  padding-top: 0;
+}
+/* line 99, ../sass/criscom/_frontpage.scss */
 .front .views-row-last {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 88, ../sass/criscom/_frontpage.scss */
+/* line 110, ../sass/criscom/_frontpage.scss */
 .front .wrapper .group-left,
 .front .wrapper .group-right {
   float: left;
   width: 49%;
 }
-/* line 93, ../sass/criscom/_frontpage.scss */
+/* line 115, ../sass/criscom/_frontpage.scss */
 .front .wrapper .group-left {
   margin-right: 2%;
 }
 
 @media (max-width: 767px) {
-  /* line 101, ../sass/criscom/_frontpage.scss */
+  /* line 123, ../sass/criscom/_frontpage.scss */
   .front iframe {
     width: 100%;
   }
 }
 
-/* line 116, ../sass/criscom/_frontpage.scss */
+/* line 138, ../sass/criscom/_frontpage.scss */
 ul.download-file {
   padding-left: 0;
   list-style: none;
@@ -3455,9 +3478,21 @@ ul.download-file li {
   margin-left: 0;
 }
 
-/* line 132, ../sass/criscom/_frontpage.scss */
+/* line 154, ../sass/criscom/_frontpage.scss */
 .front blockquote {
   margin-left: 0;
+}
+
+/* line 161, ../sass/criscom/_frontpage.scss */
+.front a.more-link {
+  display: block;
+  text-align: left;
+  padding-top: 8px;
+  padding-top: .5rem;
+}
+/* line 166, ../sass/criscom/_frontpage.scss */
+.front a.more-link:after {
+  content: " >>";
 }
 
 /* CSS code for the footer region
@@ -3704,7 +3739,8 @@ li.vimeo a {
 ** http://www.ulla.at/download/tricky/TW_web2.jpg
 */
 @media (min-width: 569px) {
-  /* line 11, ../sass/criscom/_festival.scss */
+  /* line 12, ../sass/criscom/_festival.scss */
+  .view-frontpage-trickywomen .views-row,
   .view-festival-landing-page .views-row {
     float: left;
     width: 48%;
@@ -3714,45 +3750,55 @@ li.vimeo a {
     padding-bottom: 1.5rem;
     border-top: 1px solid black;
   }
-  /* line 22, ../sass/criscom/_festival.scss */
+  /* line 23, ../sass/criscom/_festival.scss */
+  .view-frontpage-trickywomen .views-row-3,
   .view-festival-landing-page .views-row-3 {
     clear: both;
   }
-  /* line 25, ../sass/criscom/_festival.scss */
+  /* line 26, ../sass/criscom/_festival.scss */
+  .view-frontpage-trickywomen .views-row-odd,
   .view-festival-landing-page .views-row-odd {
     margin-right: 2%;
   }
-  /* line 29, ../sass/criscom/_festival.scss */
+  /* line 30, ../sass/criscom/_festival.scss */
+  .view-frontpage-trickywomen .views-row-even,
   .view-festival-landing-page .views-row-even {
     margin-left: 2%;
   }
-  /* line 33, ../sass/criscom/_festival.scss */
+  /* line 34, ../sass/criscom/_festival.scss */
+  .view-frontpage-trickywomen .views-row-last,
   .view-festival-landing-page .views-row-last {
     padding-bottom: 0;
   }
 }
-/* line 40, ../sass/criscom/_festival.scss */
+/* line 41, ../sass/criscom/_festival.scss */
+.view-frontpage-trickywomen h2 a,
 .view-festival-landing-page h2 a {
   text-decoration: none;
   color: black;
 }
 /* line 13, ../sass/library/_link.scss */
+.view-frontpage-trickywomen h2 a:hover,
 .view-festival-landing-page h2 a:hover {
   color: red !important;
 }
 /* line 14, ../sass/library/_link.scss */
+.view-frontpage-trickywomen h2 a:visited,
 .view-festival-landing-page h2 a:visited {
   color: black;
 }
 /* line 15, ../sass/library/_link.scss */
+.view-frontpage-trickywomen h2 a:active,
 .view-festival-landing-page h2 a:active {
   color: black;
 }
 /* line 16, ../sass/library/_link.scss */
+.view-frontpage-trickywomen h2 a.active,
 .view-festival-landing-page h2 a.active {
   color: black;
 }
-/* line 49, ../sass/criscom/_festival.scss */
+/* line 50, ../sass/criscom/_festival.scss */
+.view-frontpage-trickywomen .field-name-body p a,
 .view-festival-landing-page .field-name-body p a {
   text-transform: uppercase !important;
 }
