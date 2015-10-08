@@ -3495,6 +3495,11 @@ ul.download-file li {
   content: " >>";
 }
 
+/* line 171, ../sass/criscom/_frontpage.scss */
+.front #block-views-frontpage-trickywomen-block-1 {
+  clear: both;
+}
+
 /* CSS code for the footer region
 ** added by criscom
 ** 
@@ -4651,6 +4656,11 @@ li.vimeo a {
   margin-top: 1.5rem;
   padding-top: 32px;
   padding-top: 2rem;
+}
+
+/* line 1, ../sass/criscom/_news.scss */
+.node-article blockquote {
+  margin-left: 0;
 }
 
 /*
