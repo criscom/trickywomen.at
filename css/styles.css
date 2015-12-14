@@ -3755,28 +3755,24 @@ li.vimeo a {
     padding-bottom: 1.5rem;
     border-top: 1px solid black;
   }
-  /* line 23, ../sass/criscom/_festival.scss */
-  .view-frontpage-trickywomen .views-row-3,
-  .view-festival-landing-page .views-row-3 {
-    clear: both;
-  }
   /* line 26, ../sass/criscom/_festival.scss */
   .view-frontpage-trickywomen .views-row-odd,
   .view-festival-landing-page .views-row-odd {
     margin-right: 2%;
+    clear: both;
   }
-  /* line 30, ../sass/criscom/_festival.scss */
+  /* line 31, ../sass/criscom/_festival.scss */
   .view-frontpage-trickywomen .views-row-even,
   .view-festival-landing-page .views-row-even {
     margin-left: 2%;
   }
-  /* line 34, ../sass/criscom/_festival.scss */
+  /* line 35, ../sass/criscom/_festival.scss */
   .view-frontpage-trickywomen .views-row-last,
   .view-festival-landing-page .views-row-last {
     padding-bottom: 0;
   }
 }
-/* line 41, ../sass/criscom/_festival.scss */
+/* line 42, ../sass/criscom/_festival.scss */
 .view-frontpage-trickywomen h2 a,
 .view-festival-landing-page h2 a {
   text-decoration: none;
@@ -3802,7 +3798,7 @@ li.vimeo a {
 .view-festival-landing-page h2 a.active {
   color: black;
 }
-/* line 50, ../sass/criscom/_festival.scss */
+/* line 51, ../sass/criscom/_festival.scss */
 .view-frontpage-trickywomen .field-name-body p a,
 .view-festival-landing-page .field-name-body p a {
   text-transform: uppercase !important;
