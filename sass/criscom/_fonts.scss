@@ -24,6 +24,10 @@ h2 a {
     @extend %header-large;
 }
 
+h1 {
+    font-weight: 700;
+}
+
 .field-name-field-subtitle h3 {
     @extend %header-subtitle;
 }
@@ -49,6 +53,8 @@ div.download-file a
 {
     @include link-colors($normal: $red, $hover: black, $visited: lighten($red, 10%));
     @extend %medium-weight;
+    text-decoration: none;
+    @extend %single-transition;
 }
 
 .not-front div p a

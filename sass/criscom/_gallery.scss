@@ -1,0 +1,9 @@
+
+@include breakpoint($desktop) {
+    .field-name-field-gallery-image img {
+        width: 220px;
+        height: auto;
+        padding-right: 6px;
+        padding-right: .375rem;
+    }
+}
