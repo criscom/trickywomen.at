@@ -1,10 +1,13 @@
 /* CSS code for wettbewerb landing page
 ** added by criscom
 ** /de/programm/wettbewerb-1
+// CSS code for archiv landing page
+// http://www.trickywomen.at/de/tricky-women-2001-2014
 ** http://www.ulla.at/download/tricky/TW_web4.jpg
 */
 
-.node-program-teaser
+.node-program-teaser,
+.page-node-1072 // Archive landing page
 {
     .group-header
     {
@@ -32,6 +35,17 @@
     .group-right {
         float: right;
         width: 100%;
+    }
+
+    .more-link {
+        display: block;
+        text-align: left;
+        line-height: 24px;
+        font-size: 18px;
+        margin-top: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $red;
     }
 
     @include breakpoint($tablet) // 2 columns on iPad and desktop

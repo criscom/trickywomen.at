@@ -5,7 +5,8 @@
 */
 
 .node-filme.view-mode-full,
-.node-workshops-talks-exhibitions.view-mode-full
+.node-workshops-talks-exhibitions.view-mode-full,
+.node-archiv.view-mode-full
 {
     @include breakpoint($iphone5)
     {
