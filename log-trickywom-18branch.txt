@@ -1,0 +1,125 @@
+commit 891122396caaaac805119f89f3683ec4101ee2c2
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Thu Dec 24 09:11:43 2015 +0100
+
+    Adjust news article with two header images
+
+commit 8ce2b6e72e5b80cfbbcc7512b03167d6a5e8ecf4
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Fri Dec 18 00:28:38 2015 +0100
+
+    TRICKYWOM-18: Font Type and Links change; Gallery image changes
+
+commit 47c78138e25c877af0382df9002c1b170db9f652
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Mon Dec 14 21:59:35 2015 +0100
+
+    Adjust frontpage view rows: clear odd
+
+commit 560b1d672a556bbf727bd41cd52e6298504691ad
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Thu Oct 8 22:39:25 2015 +0200
+
+    Adjust blockquote indentation on news articles
+
+commit d38cfecb0bf7f13f6e2d5f62b64548a2d67b18eb
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Fri Sep 11 16:19:13 2015 +0200
+
+    Apply major changes to front page: two columns
+
+commit ad22c84271d8c61b49a72a9473aa97bdabce6dbf
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Thu Sep 10 19:23:42 2015 +0200
+
+    Adjust Header date color; adjust h1, h2 height;
+
+commit 10c290fbe4e049b3e765b34c511001fca36157a6
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Thu Sep 10 17:20:18 2015 +0200
+
+    Hide news button
+
+commit 208816bf4ac71e92a80556f05d1506a893ca852e
+Author: Christoph Potzinger <cpotzinger@Christophs-iMac.lan>
+Date:   Thu Jul 2 17:44:42 2015 +0200
+
+    Adjust frontpage images floating
+
+commit 8251619479a4cfde0eaae7ee5137e41fda05189d
+Author: Christoph Potzinger <cpotzinger@Christophs-iMac.lan>
+Date:   Mon Mar 30 13:07:02 2015 +0200
+
+    Clearfixing for festival landing page
+
+commit 106d9381c0675ee2d58afbab77c78c48dde37c3c
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Sun Mar 29 20:09:49 2015 +0200
+
+    Style gewinnerinnen landing page
+
+commit d11e0d9c2bd2e57e121d45271ddc4b8bc7958623
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Tue Mar 10 21:22:19 2015 +0100
+
+    Change font size for program pages
+
+commit 7034c27eb29dc58abc4b4d72e4cd3b7b61d10ba4
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Tue Mar 3 06:04:41 2015 +0100
+
+    Change floats for image/text group-left group-right for correct display
+
+commit c65dfba2592525ede38b1721243f547e6699ca94
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Wed Feb 25 12:03:58 2015 +0100
+
+    Style shop, language switcher, main menu, WEBSITE LAUNCH
+
+commit 7c76046d2a82ccccc16c284d0295980d633c1871
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Mon Feb 23 15:24:43 2015 +0100
+
+    Style artists landing, artists, detail, partnerinnen (logos
+
+commit 8c630a634f394c61af7b9be49b774239fed851ee
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Mon Feb 23 05:19:34 2015 +0100
+
+    Style workshops, exhibitions, festival infos, twitter footer
+
+commit 3675ab6deae838ea4497bb421325b9c0e8455b29
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Wed Feb 18 22:30:25 2015 +0100
+
+    Style mobile, style adjustments
+
+commit 19bb35f2fdc6072ee93d19d62cc9d6e181cb2a02
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Wed Feb 18 06:50:59 2015 +0100
+
+    Style front, festival, programm, competition, footer, header, menu
+
+commit c81757be4fd7a23f98cda1527107f9a675a86769
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Tue Feb 17 06:28:31 2015 +0100
+
+    Add bg images
+
+commit a468ad7e27690129ac9a818652c5839e2afafaf4
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Tue Feb 17 05:51:19 2015 +0100
+
+    Style header: 1st day
+
+commit 69e1434bf0dac807d5c1fa7588e330c9eb93baa8
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Mon Feb 16 14:42:24 2015 +0100
+
+    Start CSS header
+
+commit 63abe91086a7d26680de155cbd308f9d78c64262
+Author: Christoph Potzinger <criscom27@gmail.com>
+Date:   Sun Feb 8 16:49:30 2015 +0100
+
+    First commit

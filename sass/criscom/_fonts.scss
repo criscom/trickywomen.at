@@ -41,7 +41,8 @@ p
     @extend %base-weight;
 }
 
-div.download-file a
+div.download-file a,
+div.field-name-field-link-zur-bildergalerie a
         {
             @extend .inline-link;
             @extend %base-font;
