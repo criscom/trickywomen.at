@@ -47,6 +47,7 @@ footer
                 a
                 {
                     @include link-colors($normal: white, $hover: red, $visited: darken(white, 10%));
+                    @extend %single-transition;
                 }
             }
         }
@@ -78,6 +79,7 @@ li.impressum
     {
         text-decoration: none;
         text-transform: uppercase;
+        @extend %single-transition;
     }
 }
 
@@ -111,6 +113,7 @@ li.twitter
         display: block;
 
         @include hide-text;
+        // @extend %single-transition;
     }
 }
 

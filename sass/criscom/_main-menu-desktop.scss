@@ -51,6 +51,7 @@ ul.nice-menu li
         @include link-colors($normal: white, $hover: $red, $active: $red);
         @extend %medium-weight;
         padding-right: 0 !important;
+        @extend %single-transition;
     }
     &.active-trail a
     {
