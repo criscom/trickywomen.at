@@ -45,6 +45,8 @@
             margin-left: 0;
             clear: both;
         }
+
+        .field-name-field-datei-laden a,
         .download-file li a {
             @include hyphens(auto);
         }

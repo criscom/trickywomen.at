@@ -135,6 +135,7 @@
     @extend .inline-link;
 }
 
+.field-name-field-datei-laden ul,
 ul.download-file
 {
     padding-left: 0;
@@ -158,7 +159,7 @@ ul.download-file
 
 // more link
 
-.front a.more-link {
+a.more-link {
     display: block;
     text-align: left;
     padding-top: 8px;
