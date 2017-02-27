@@ -41,12 +41,22 @@ p
     @extend %base-weight;
 }
 
+div.field-name-field-datei-laden a,
 div.download-file a,
 div.field-name-field-link-zur-bildergalerie a
         {
             @extend .inline-link;
             @extend %base-font;
         }
+
+.field-name-field-datei-laden span.file {
+    display: block;
+    clear: left;
+}
+
+.file-icon {
+    display: none;
+}
 
 // all inline links within a div tag
 
