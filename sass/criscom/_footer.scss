@@ -100,7 +100,8 @@ li.impressum
 
 li.facebook,
 li.vimeo,
-li.twitter
+li.twitter,
+li.instagram
 {
     display: inline-block !important;
 
@@ -166,5 +167,21 @@ li.vimeo
         height: 39px;
 
         @extend .icons-vimeo;
+    }
+}
+
+li.instagram
+{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 18px;
+    margin-left: 1.125rem;
+
+    a
+    {
+        width: 45px;
+        height: 39px;
+
+        @extend .icons-instagram;
     }
 }
