@@ -88,6 +88,10 @@ li.impressum
     margin-left: 40px;
     margin-left: 2.5rem;
 
+    &:last-child {
+        margin-left: 0;
+    }
+
     @include breakpoint($iphone4landscape)
     {
         margin-left: 0;
