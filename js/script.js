@@ -10,17 +10,6 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($) {
-  /* START: SMARTMENUS */
-  (function($) {
-  // initialise smartmenus for main menu
-  // $('#main-menu').smartmenus();
-})(jQuery);
-/* END: SMARTMENUS */
-
-$(document).ready(function(e) {
-  $('img[usemap]').rwdImageMaps();
-});
 
 // TRICKYWOM-115 DSGVO MAßnahmen umsetzen
 // Google Analytics Opt-out
@@ -37,15 +26,26 @@ jQuery(function() {
 });
 
 
+(function($) {
+    $(document).ready(function() {
+// Unset Language Switcher Link on Shop page
+    $('body.page-node-49 .language-switcher-locale-url li.en.last').html('<span class="language-link locale-untranslated" lang="en">EN</span>');
+
+// Program landing page. Change Breadcrumb and Title from "Programm" to "Program" on EN
+    $('body.page-programm.i18n-en .main-content > h1').html('<h1>Program</h1>');
+    $('body.page-programm.i18n-en .breadcrumb li:nth-child(3)').html('<li>Program</li>');
+    });
+
+
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
+// Drupal.behaviors.my_custom_behavior = {
+//  attach: function(context, settings) {
 
     // Place your code here.
 
 
-  }
-};
+//  }
+// };
 
 
 })(jQuery);
