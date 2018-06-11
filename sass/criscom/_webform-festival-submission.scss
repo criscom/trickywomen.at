@@ -1,0 +1,20 @@
+// Submission for Tricky Women 2019
+// Webform: https://www.trickywomen.at/de/node/1920/webform
+
+fieldset {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  legend {
+    span {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+  }
+}
+
+#webform-component-credentials {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
