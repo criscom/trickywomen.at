@@ -5,4 +5,16 @@
   border: none;
   border-radius: 0;
   text-shadow: none;
+  font-size: 10px;
+}
+
+#popup-text {
+  h2 {
+    text-transform: initial;
+    font-size: 16px !important;
+  }
+  h2,
+  p {
+    font-weight: normal !important;
+  }
 }
