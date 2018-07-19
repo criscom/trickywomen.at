@@ -13,8 +13,19 @@
     text-transform: initial;
     font-size: 16px !important;
   }
+
   h2,
   p {
     font-weight: normal !important;
+    color: white !important;
   }
+}
+
+.eu-cookie-compliance-secondary-button,
+.eu-cookie-compliance-default-button {
+  padding: 0 8px !important;
+}
+
+.agree-button {
+  padding: 0 12px !important;
 }
