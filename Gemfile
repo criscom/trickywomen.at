@@ -8,4 +8,5 @@ group :frontend do
   gem 'sass',           '~> 3.3'
   gem 'sass-globbing',  '~> 1.1.1'
   gem 'zen-grids',      '>= 2.0.0.beta.3'
+  gem 'ffi',           '>= 1.9.24'
 end
